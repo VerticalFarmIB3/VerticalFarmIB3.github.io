@@ -1,0 +1,61 @@
+esphome:
+  name: ventilator
+  friendly_name: Ventilator
+
+esp32:
+  board: esp32dev
+  framework:
+    type: arduino
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  encryption:
+    key: "mDtgHfR4ALwOhFUdxeaxko599tq9er8ruHesMC2L02w="
+
+ota:
+  password: "ecaefba7f0257cb84e4c60bf91efd6b5"
+
+wifi:
+  ssid: CM3
+  password: WelcomeToCM3
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Ventilator Fallback Hotspot"
+    password: "7s3fKMOGDq40"
+
+
+output:
+  - platform: ledc
+    id: motor_forward_pin
+    pin: GPIO5
+  - platform: ledc
+    id: motor_reverse_pin
+    pin: GPIO4
+  - platform: ledc
+    id: motor2_reverse_pin
+    pin: GPIO13
+  - platform: ledc
+    id: motor2
+    pin: GPIO12
+
+fan:
+  - platform: hbridge
+    id: my_fan
+    name: "Living Room Fan"
+    pin_a: motor_forward_pin
+    pin_b: motor_reverse_pin
+    # enable_pin: motor_enable
+    decay_mode: slow
+
+  - platform: hbridge
+    id: my_fan2
+    name: "Living Room 2 Fan"
+    pin_a: motor2_reverse_pin
+    pin_b: motor2
+    # enable_pin: motor_enable
+    decay_mode: slow
+    
