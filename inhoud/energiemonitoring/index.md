@@ -33,17 +33,30 @@ Alle componenten zijn SMD, er zijn geen through hole componenten, wat het solder
 
 ![bordje2](bordje2.jpg)
 ![pcb](pcb.jpg)
+
+[LINK NAAR DE FILES](https://github.com/KlaasMeersman/KlaasMeersman.github.io/tree/main/inhoud/energiemonitoring/PCBs%20Bert%20(Type1%2C%20Type2%2C%20Powerlogger)/PowerLogger)
 ## Werking
 ### Blokschema
 
 ![blokschema](blokschema.jpg)
-...
+
+Hierboven zie je het eenvoudige blokschema van het energiemonitoringsbordje. Het is onderverdeeld in verschillende delen, verbonden met pijlen. Aan de linkerkant van het schema zie je de te meten componenten:+5V, +12V en de LED's (Per LED 3 voedingen). In het midden zie je de interne elektronica van het energiemonitoringsbordje, en aan de rechterkant zie je de uitgang dat het bordje naar stuurt, namelijk de MQTT-broker en home-assistant. 
+
+De +5V en +12V worden binnen gelezen en geregistreerd door de stroomchips (ACS712). Deze stroomchips zijn magnetische hall-sensoren die op een lineaire manier stroom tot 5 ampère of -5 ampère omzetten naar een spanning. Aangezien de stroomchips op +5V volt werken, moet de output van de stroomchip via een spanningsdeler worden omgezet naar 3.3V zodat de ADC dit kan binnenlezen en digitaliseren. De ADC stuurt deze informatie vervolgens door naar de ESP32 via I2C.
+
+Voor de voedingen van de LED's gaat het eerst door een relais, waardoor het mogelijk is om de LED's aan of uit te zetten. Op het bord zijn 4 ADC's aanwezig, waarvan twee voor het meten en digitaliseren van stroom en twee voor het meten of digitaliseren van spanning. Zo is er voor iedere LED 3 voedingen, en voor iedere voeding is er een relais, een stroomcircuitmeting en een spanningscircuitmeting aanwezig. Voor de correcte spanning te lezen is het belangerijk dat je de juiste weerstandswaarden kiest zodat je MAXIMAAL 3.3+0.3V aan de ingang van ADC hebt.
+
+De ESP32 neemt alle informatie op, voert de benodigde berekeningen uit en stuurt deze door naar de MQTT-broker. Deze broker stuurt de informatie vervolgens door naar home-assistant. Omgekeerd zal de MQTT-broker informatie pushen naar de ESP32, die via de relais de LED's aan en uit kan zetten.
 
 ### Bedrading voor correcte metingen
 
 ![bedrading](bedrading.jpg)
 
-...
+Het Energy energiemonitoringsbordje is onderverdeeld in verschillende meetgedeelten. Links bovenaan bevindt zich de stroommeting zonder relais. Dit is bedoeld om de +5V en +12V te meten. Rechts daarvan bevindt zich het stroomgedeelte met relais. Rechtsonder is de spanningsmeting met de juiste weerstandswaarden als spanningsdeler.
+
+De meting is vergelijkbaar met het aansluiten van een multimeter. De stroom wordt in serie geplaatst en de spanning in parallel. Om de stroom te meten, heeft u twee paden nodig: de inkomende draad en de uitgaande draad. Dit pad kan worden onderbroken door de relais en verbindingen op het bordje voor 8 metingen. Dit werkt op een vergelijkbare manier voor de spanningsmeting, maar met het verschil dat je de spanning slechts op één punt meet omdat de andere verbinding via de spanningsdeler verbonden is met de gnd (SPANNING MEET JE OVER IETS)!
+
+Zorg ervoor dat alle grounds correct verbonden zijn, zodat er een correcte meting kan plaatsvinden.
 
 ## Componenten
 ![componenten](componenten.jpg)
