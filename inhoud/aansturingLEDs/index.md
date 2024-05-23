@@ -3,7 +3,7 @@ title: LED-aansturing en bronnen
 ---
 
 
-[**LEDs en PCB**](/inhoud/leds/) - [**LED-aansturing en bronnen**](/inhoud/aansturingLEDs/) - [**Energiemonitoring**](/inhoud/energiemonitoring/) - [**Watervoorziening**](/inhoud/aquaMonitoring/) - [**Dashboard**](/inhoud/dashboard/) - [**Modulariteit**](/inhoud/modulariteit/) - [**Plantenmonitoring**](/inhoud/plantensensor/) - [**Operation**](/inhoud/operation/) - [**Logboek**](/inhoud/logboek/)
+[**Home**](https://klaasmeersman.github.io/) - [**LEDs and PCB**](/inhoud/leds/) - [**LED-aansturing en bronnen**](/inhoud/aansturingLEDs/) - [**Energiemonitoring**](/inhoud/energiemonitoring/) - [**Watervoorziening**](/inhoud/aquaMonitoring/) - [**Dashboard**](/inhoud/dashboard/) - [**Modulariteit**](/inhoud/modulariteit/) - [**Plantsensing**](/inhoud/plantensensor/) - [**Operation**](/inhoud/operation/) - [**Logboek**](/inhoud/logboek/)
 
 ---
 
@@ -39,7 +39,7 @@ Deze LED-array bestaat uit twee identieke PCB's die parallel gevoed worden (zie 
 
 - De 72 rode LED's worden gevoed door 1 stroom bron van 1400mA. Deze voedt de rode LED's op de twee PCB's parallel. Elke rode LED heeft 350mA die er doorheen gaat. Elke rode LED heeft een doorlaatspanning van 2,09V en een stroom van350mA. Het vermogen dat door de rode LED's gaat is dus (2,09V * 0,35 A * 72 =) 53W.
 - De 24 witte LED's worden gevoed door 1 stroom bron van 1400mA. Deze voedt de witte LED's op de twee PCB's parallel. Elke witte LED heeft een doorlaatspanning van 2,8V en een stroom van 700mA. Het vermogen dat door de witte LED's gaat is dus (2,8V * 0,7 A * 24 =) 47W.
-- De 24 blauwe LED's worden gevoed door 1 stroom bron van 1050mA. Deze voedt de blauwe LED's op de twee PCB's parallel. Elke blauwe LED heeft een doorlaatspanning van 3V en een stroom van 175mA. Het vermogen dat door de witte LED's gaat is dus (3V * 0,175 A * 24 =) 12,6W.
+- De 24 blauwe LED's worden gevoed door 1 stroom bron van 1050mA. Deze voedt de blauwe LED's op de twee PCB's parallel. Elke blauwe LED heeft een doorlaatspanning van 3V en een stroom van 175mA. Het vermogen dat door de blauwe LED's gaat is dus (3V * 0,175 A * 24 =) 12,6W.
 
 Het totale stroomverbruik is theoretisch 112,6W wanneer ze aan staan.
 
@@ -67,7 +67,7 @@ Het totale stroomverbruik is theoretisch 32,2W wanneer ze aan staan.
 
 De bedrading gebeurt als volgt:
 
----
+<img src="LED1.jpg" alt="alt text" style="width:600px;">
 
 # Aansturen van de LED-bronnen
 De LED-bronnen worden aangestuurd door een controller board(POWERLOGGER, LEDs SWITCH board).
