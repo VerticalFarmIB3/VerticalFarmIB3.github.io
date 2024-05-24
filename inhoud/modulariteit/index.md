@@ -7,4 +7,4 @@ title: Modularity
 ---
 
 
-The vertical farm is set up in differenet levels. These are however modular and can simply be switched by sliding out an entire frame out of a slot. The cables might need to be readjusted however. A conveniant way to increase modularity further could be by working with banaplugs making every level hot pluggable.
+The vertical farm is set up in different levels. These are, however, modular and can simply be switched by sliding an entire frame out of a slot. The cables might need to be readjusted, however. A convenient way to increase modularity further could be by working with banana plugs, making every level hot-pluggable.
