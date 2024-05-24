@@ -21,6 +21,7 @@ To get a dashboard with all our measerments we needed to connect all our devices
 
 This is how we connected the database to Grafana.
 <img src="Pictures/SetUp_HomeAssistant.PNG" alt="drawing" width="500"/>
+
 If then everything is setup. We can create dashboards to diplay our data. The pictures below give a example on how the diplays will look like. 
 <img src="Pictures/Grafana_1.png" alt="drawing" width="500"/>
 <img src="Pictures/Grafana_2.png" alt="drawing" width="500"/>
