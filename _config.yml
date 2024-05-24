@@ -16,7 +16,7 @@
 title: Vertical farm - IB3
 email: klaas.meersman@student.kuleuven.be, axel.martens@student.kuleuven.be, arthur.valentin@student.kuleuven.be, bert.pyck@student.kuleuven.be, ybe.vandamme@student.kuleuven.be, joeri.sevens@student.kuleuven.be, florian.vandenbogaerde@student.kuleuven.be
 description: >- # this means to ignore newlines until "baseurl:"
-  Een beschrijving van de verticale boerderij in gebouw B, tweede verdieping, op de KU Leuven campus in Gent. Deze website wordt gebruikt om de voortgang van het project te documenteren.
+  A description of the vertical farm in Building B, second floor, on the KU Leuven campus in Ghent. This website is used to document the project.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://klaasmeersman.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: /
