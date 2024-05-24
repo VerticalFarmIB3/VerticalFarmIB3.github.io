@@ -1,6 +1,6 @@
 esphome:
-  name: soil-moisture
-  friendly_name: Plant sensors
+  name: sensorenplant-team-2
+  friendly_name: SensorenPlant Team 2
 
 esp32:
   board: esp32dev
@@ -13,10 +13,10 @@ logger:
 # Enable Home Assistant API
 api:
   encryption:
-    key: "twkGFV1QElXeeA3FsTmkHDS0oDe01dTZTraBr5cgp0o="
+    key: "PHnAL7geUYYLA6eqiB2/GJPqoaPR95V51WdySx3KZew="
 
 ota:
-  password: "2d1b865c428be14f44812e0af4944fc4"
+  password: "31c98a0410ea5d56b60d961355c87475"
 
 wifi:
   ssid: CM3
@@ -24,8 +24,15 @@ wifi:
 
   # Enable fallback hotspot (captive portal) in case wifi connection fails
   ap:
-    ssid: "Soil-Moisture Fallback Hotspot"
-    password: "WUpZNVD42kWQ"
+    ssid: "Sensorenplant-Team-2"
+    password: "SUmEuApllgrn"
+
+mqtt:
+  discovery: false
+  broker: 192.168.0.40
+  port: 1883
+  username: VF
+  password: IB3
 
 i2c:
   - id: bus_a
@@ -33,46 +40,36 @@ i2c:
     scl: 22
     scan: true
 
-  - id: bus_b
-    sda: 13
-    scl: 16
-    scan: true
+#  - id: bus_b
+#    sda: 13
+#    scl: 16
+#    scan: true
 
 captive_portal:
-
 sensor:
   - platform: scd4x
     i2c_id: bus_a
     co2:
-      name: "CO2 1"
+      name: "CO2"
     temperature:
-      name: "Temperature 1"
+      name: "Temperature"
     humidity:
-      name: "Humidity 1"
-    update_interval: 30s
-
-  - platform: scd4x
-    i2c_id: bus_b
-    co2:
-      name: "CO2 2"
-    temperature:
-      name: "Temperature 2"
-    humidity:
-      name: "Humidity 2"
-    update_interval: 30s
-
+      name: "Humidity"
+    update_interval: 120s
 
   - platform: adc
-    pin: GPIO34
+    pin: GPIO32
     id: "adcMoisture1"
     accuracy_decimals: 3
     unit_of_measurement: '%'
+    attenuation: 11db
     filters:
       - calibrate_linear:
-        - 0.920  -> 100.0
-        - 1.570 -> 0
-    name: "Soil Moister 1"
-    update_interval: 30s
+        - 1.111  -> 100.0
+        - 2.52 -> 0
+      - lambda: if (x < 0) return 0; else if (x > 100) return 100; else return (x);
+    name: "Soil-Moister Links"
+    update_interval: 120s
     force_update: true
 
 # * - platform: adc
@@ -83,16 +80,18 @@ sensor:
 #    update_interval: 60s
 
   - platform: adc
-    pin: GPIO35
+    pin: GPIO34
     id: "adcMoisture"
     accuracy_decimals: 3
     unit_of_measurement: '%'
+    attenuation: 11db
     filters:
       - calibrate_linear:
-        - 0.920  -> 100.0
-        - 1.570 -> 0
-    name: "Soil Moister 2"
-    update_interval: 30s
+        - 1.111  -> 100.0
+        - 2.52 -> 0
+      - lambda: if (x < 0) return 0; else if (x > 100) return 100; else return (x);
+    name: "Soil-Moister Rechts"
+    update_interval: 120s
     force_update: true
 
 #  - platform: adc
@@ -101,3 +100,4 @@ sensor:
 #    accuracy_decimals: 5
 #    name: "Sensor Voltage 2"
 #    update_interval: 60s
+    

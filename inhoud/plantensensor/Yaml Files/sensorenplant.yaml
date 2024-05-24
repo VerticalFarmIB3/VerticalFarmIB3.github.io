@@ -1,0 +1,105 @@
+esphome:
+  name: sensorenplantteam3
+  friendly_name: SensorenPlant Team 3
+
+esp32:
+  board: esp32dev
+  framework:
+    type: arduino
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  encryption:
+    key: "E4ydvXkt8en8bEx9JsalAeCYBtfADX8GgD5CXrOFuu4="
+
+ota:
+  password: "798fc54501e4be835db2fb23769fe2fb"
+
+wifi:
+  ssid: CM3
+  password: WelcomeToCM3
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Sensorenplant Fallback Hotspot"
+    password: "pPaYcOcDr0fh"
+
+mqtt:
+  discovery: false
+  broker: 192.168.0.40
+  port: 1883
+  username: VF
+  password: IB3
+
+i2c:
+  - id: bus_a
+    sda: 21
+    scl: 22
+    scan: true
+
+#  - id: bus_b
+#    sda: 13
+#    scl: 16
+#    scan: true
+
+captive_portal:
+sensor:
+  - platform: scd4x
+    i2c_id: bus_a
+    co2:
+      name: "CO2"              
+    temperature:
+      name: "Temperature"
+    humidity:
+      name: "Humidity"
+    update_interval: 120s
+
+  - platform: adc
+    pin: GPIO32
+    id: "adcMoisture1"
+    accuracy_decimals: 3
+    unit_of_measurement: '%'
+    filters:
+      - calibrate_linear:
+        - 1.111  -> 100.0
+        - 2.52 -> 0
+    name: "Soil-Moister Links "
+    update_interval: 120s
+    attenuation: 11db
+    force_update: true
+
+#  - platform: adc
+#    pin: GPIO32
+#    id: "adcRaw_Sensor_Data1"
+#    accuracy_decimals: 5
+#    name: "Plant - Sensor Voltage 1"
+#    attenuation: 11db
+#    update_interval: 10s
+
+  - platform: adc
+    pin: GPIO34
+    id: "adcMoisture"
+    accuracy_decimals: 3
+    unit_of_measurement: '%'
+    attenuation: 11db
+    filters:
+      - calibrate_linear:
+        - 1.111  -> 100.0
+        - 2.52 -> 0
+      - lambda: if (x < 0) return 0; else if (x > 100) return 100; else return (x);
+    name: "Soil-Moister Rechts"
+    update_interval: 120s
+    force_update: true
+
+#  - platform: adc
+#    pin: GPIO34
+#    id: "adcRaw_Sensor_Data"
+#    accuracy_decimals: 5
+#    name: "Sensor Voltage 2"
+#    attenuation: 11db
+#    update_interval: 10s
+
+    
