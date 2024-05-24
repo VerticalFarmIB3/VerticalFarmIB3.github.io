@@ -2,7 +2,7 @@
 title: Dashboard
 ---
 
-[**Home**](https://klaasmeersman.github.io/) - [**LEDs en PCB**](/inhoud/leds/) - [**LED-aansturing en bronnen**](/inhoud/aansturingLEDs/) - [**Energiemonitoring**](/inhoud/energiemonitoring/) - [**Watervoorziening**](/inhoud/aquaMonitoring/) - [**Dashboard**](/inhoud/dashboard/) - [**Modulariteit**](/inhoud/modulariteit/) - [**Plantsensing**](/inhoud/plantensensor/) - [**Operation**](/inhoud/operation/) - [**Logboek**](/inhoud/logboek/)
+[**Home**](https://klaasmeersman.github.io/) - [**LEDs and PCB**](/inhoud/leds/) - [**LED Control and Sources**](/inhoud/aansturingLEDs/) - [**Energy Monitoring**](/inhoud/energiemonitoring/) - [**Water Supply**](/inhoud/aquaMonitoring/) - [**Dashboard**](/inhoud/dashboard/) - [**Modularity**](/inhoud/modulariteit/) - [**Plant Sensing**](/inhoud/plantensensor/) - [**Operation**](/inhoud/operation/) - [**Logbook**](/inhoud/logboek/)
 
 ---
 
@@ -19,8 +19,8 @@ To get a dashboard with all our measerments we needed to connect all our devices
 
 # Grafana 
 
-This is how we connected the database to Grafana.
-<img src="Pictures/SetUp_HomeAssistant.png" alt="drawing" width="500"/> 
+<!--- This is how we connected the database to Grafana.
+#<img src="Pictures/SetUp_HomeAssistant.png" alt="drawing" width="500"/> -->
 If then everything is setup. We can create dashboards to diplay our data. The pictures below give a example on how the diplays will look like. 
 <img src="Pictures/Grafana_1.png" alt="drawing" width="500"/>
 <img src="Pictures/Grafana_2.png" alt="drawing" width="500"/>
