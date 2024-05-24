@@ -18,9 +18,9 @@ email: klaas.meersman@student.kuleuven.be, axel.martens@student.kuleuven.be, art
 description: >- # this means to ignore newlines until "baseurl:"
   A description of the vertical farm in Building B, second floor, on the KU Leuven campus in Ghent. This website is used to document the project.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://klaasmeersman.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://verticalfarmib3.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: /
-github_username:  klaasmeersman
+github_username:  verticalfarmib3
 
 # Build settings
 markdown: kramdown

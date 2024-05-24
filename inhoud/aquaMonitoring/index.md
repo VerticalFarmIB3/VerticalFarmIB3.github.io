@@ -2,7 +2,7 @@
 title: Water Supply
 ---
 
-[**Home**](https://klaasmeersman.github.io/) - [**LEDs and PCB**](/inhoud/leds/) - [**LED Control and Sources**](/inhoud/aansturingLEDs/) - [**Energy Monitoring**](/inhoud/energiemonitoring/) - [**Water Supply**](/inhoud/aquaMonitoring/) - [**Dashboard**](/inhoud/dashboard/) - [**Modularity**](/inhoud/modulariteit/) - [**Plant Sensing**](/inhoud/plantensensor/) - [**Operation**](/inhoud/operation/) - [**Logbook**](/inhoud/logboek/)
+[**Home**](https://verticalfarmib3.github.io/) - [**LEDs and PCB**](/inhoud/leds/) - [**LED Control and Sources**](/inhoud/aansturingLEDs/) - [**Energy Monitoring**](/inhoud/energiemonitoring/) - [**Water Supply**](/inhoud/aquaMonitoring/) - [**Dashboard**](/inhoud/dashboard/) - [**Modularity**](/inhoud/modulariteit/) - [**Plant Sensing**](/inhoud/plantensensor/) - [**Operation**](/inhoud/operation/) - [**Logbook**](/inhoud/logboek/)
 
 ---
 <style> 
@@ -111,7 +111,7 @@ This data and obtained rights can then be used to read the nutrient tank once wi
 
  reading the nutrient tank. This is because the ISEs are not designed for intensive use and can quickly deviate from their initial calibration values.
 
-[Link to ISE code (USB connection to Raspberry Pi)](https://github.com/KlaasMeersman/KlaasMeersman.github.io/blob/main/inhoud/aquaMonitoring/ISE_UITLEZING.py)
+[Link to ISE code (USB connection to Raspberry Pi)](https://github.com/verticalfarmib3/verticalfarmib3.github.io/blob/main/inhoud/aquaMonitoring/ISE_UITLEZING.py)
 
 # Nutrient Replenishment
 
@@ -131,13 +131,13 @@ There are three pumps provided to pump water, nutrient solution A, and B into th
 
 After replenishing the water tank, a new measurement will take place to check if there has been any overshoot, in which case the tank would be diluted with water.
 
-[Link to relays code](https://github.com/KlaasMeersman/KlaasMeersman.github.io/blob/main/inhoud/aquaMonitoring/Relays.cpp)
+[Link to relays code](https://github.com/verticalfarmib3/verticalfarmib3.github.io/blob/main/inhoud/aquaMonitoring/Relays.cpp)
 
 # Water Tank Level Control
 
 To keep the water volume in the tank within limit values, we use a sonar module.
 
-[Link to sonar module code](https://github.com/KlaasMeersman/KlaasMeersman.github.io/blob/main/inhoud/aquaMonitoring/Hoogtesensor.cpp)
+[Link to sonar module code](https://github.com/verticalfarmib3/verticalfarmib3.github.io/blob/main/inhoud/aquaMonitoring/Hoogtesensor.cpp)
 
 # Possible Improvements
 

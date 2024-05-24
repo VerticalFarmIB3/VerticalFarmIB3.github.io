@@ -2,7 +2,7 @@
 title: Plantsensing
 ---
 
-[**Home**](https://klaasmeersman.github.io/) - [**LEDs and PCB**](/inhoud/leds/) - [**LED Control and Sources**](/inhoud/aansturingLEDs/) - [**Energy Monitoring**](/inhoud/energiemonitoring/) - [**Water Supply**](/inhoud/aquaMonitoring/) - [**Dashboard**](/inhoud/dashboard/) - [**Modularity**](/inhoud/modulariteit/) - [**Plant Sensing**](/inhoud/plantensensor/) - [**Operation**](/inhoud/operation/) - [**Logbook**](/inhoud/logboek/)
+[**Home**](https://verticalfarmib3.github.io/) - [**LEDs and PCB**](/inhoud/leds/) - [**LED Control and Sources**](/inhoud/aansturingLEDs/) - [**Energy Monitoring**](/inhoud/energiemonitoring/) - [**Water Supply**](/inhoud/aquaMonitoring/) - [**Dashboard**](/inhoud/dashboard/) - [**Modularity**](/inhoud/modulariteit/) - [**Plant Sensing**](/inhoud/plantensensor/) - [**Operation**](/inhoud/operation/) - [**Logbook**](/inhoud/logboek/)
 
 ---
 Ybe Vandamme & Florian Vandenbogaerde 
@@ -29,7 +29,7 @@ The soil sensor measures the moisture content of the substrate (rockwool). This 
 
 In the vertical farm, we use custom-made PCBs. The PCB that controls the fans was created by the AquaMonitoring team, and you can find more information about it [here](../aquaMonitoring/index.md). 
 
-The second type of PCB was designed by our team. This PCB can accommodate two SCD40 sensors and two soil sensors. However, we decided to connect only one SCD40 sensor per board due to the high cost of the sensor. This design still allows for the integration of an additional sensor if it operates with I²C. You can find the schematic below as a PDF. The KiCad files are also available and can be found [here](https://github.com/KlaasMeersman/KlaasMeersman.github.io/tree/main/inhoud/plantensensor/PCB%20Plantsensing). 
+The second type of PCB was designed by our team. This PCB can accommodate two SCD40 sensors and two soil sensors. However, we decided to connect only one SCD40 sensor per board due to the high cost of the sensor. This design still allows for the integration of an additional sensor if it operates with I²C. You can find the schematic below as a PDF. The KiCad files are also available and can be found [here](https://github.com/verticalfarmib3/verticalfarmib3.github.io/tree/main/inhoud/plantensensor/PCB%20Plantsensing). 
 
 # Codes
-To control this PCB, we used two methods. The plant monitoring board was programmed in ESPHome using YAML files. The codes for this can be found [here](https://github.com/KlaasMeersman/KlaasMeersman.github.io/tree/main/inhoud/plantensensor/Yaml%20Files). The PCB for the fans was programmed using C++. This includes Over-The-Air (OTA) updates for adjustments when necessary, and MQTT to listen for activation signals. The code can be found [here](https://github.com/KlaasMeersman/KlaasMeersman.github.io/tree/main/inhoud/plantensensor/Code%20Fans).
+To control this PCB, we used two methods. The plant monitoring board was programmed in ESPHome using YAML files. The codes for this can be found [here](https://github.com/verticalfarmib3/verticalfarmib3.github.io/tree/main/inhoud/plantensensor/Yaml%20Files). The PCB for the fans was programmed using C++. This includes Over-The-Air (OTA) updates for adjustments when necessary, and MQTT to listen for activation signals. The code can be found [here](https://github.com/verticalfarmib3/verticalfarmib3.github.io/tree/main/inhoud/plantensensor/Code%20Fans).

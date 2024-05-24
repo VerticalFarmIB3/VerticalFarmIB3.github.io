@@ -2,7 +2,7 @@
 title: Dashboard
 ---
 
-[**Home**](https://klaasmeersman.github.io/) - [**LEDs and PCB**](/inhoud/leds/) - [**LED Control and Sources**](/inhoud/aansturingLEDs/) - [**Energy Monitoring**](/inhoud/energiemonitoring/) - [**Water Supply**](/inhoud/aquaMonitoring/) - [**Dashboard**](/inhoud/dashboard/) - [**Modularity**](/inhoud/modulariteit/) - [**Plant Sensing**](/inhoud/plantensensor/) - [**Operation**](/inhoud/operation/) - [**Logbook**](/inhoud/logboek/)
+[**Home**](https://verticalfarmib3.github.io/) - [**LEDs and PCB**](/inhoud/leds/) - [**LED Control and Sources**](/inhoud/aansturingLEDs/) - [**Energy Monitoring**](/inhoud/energiemonitoring/) - [**Water Supply**](/inhoud/aquaMonitoring/) - [**Dashboard**](/inhoud/dashboard/) - [**Modularity**](/inhoud/modulariteit/) - [**Plant Sensing**](/inhoud/plantensensor/) - [**Operation**](/inhoud/operation/) - [**Logbook**](/inhoud/logboek/)
 
 ---
 
@@ -14,7 +14,7 @@ To get a dashboard with all our measerments we needed to connect all our devices
 
 # Home Assistant
 
-[Here](https://github.com/KlaasMeersman/KlaasMeersman.github.io/blob/main/inhoud/dashboard/config.yaml%20van%20homeassistant.txt) can you find a example of our config file for the HomeAssistant. There can you see that the mqtt and also how to implement the influxdb. On the picture below you can see how the HomeAssistant can look like. Or if you are on the CM3 network you can click [here](https://192.168.0.40:8123) to see it live. 
+[Here](https://github.com/verticalfarmib3/verticalfarmib3.github.io/blob/main/inhoud/dashboard/config.yaml%20van%20homeassistant.txt) can you find a example of our config file for the HomeAssistant. There can you see that the mqtt and also how to implement the influxdb. On the picture below you can see how the HomeAssistant can look like. Or if you are on the CM3 network you can click [here](https://192.168.0.40:8123) to see it live. 
 <img src="Pictures/HomeAssistant.png" alt="drawing" width="500"/>
 
 # Grafana 
