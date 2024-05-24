@@ -1,83 +1,80 @@
 ---
-title: LED-aansturing en bronnen
+title: LED Control and Sources
 ---
 
-
-[**Home**](https://klaasmeersman.github.io/) - [**LEDs and PCB**](/inhoud/leds/) - [**LED-aansturing en bronnen**](/inhoud/aansturingLEDs/) - [**Energiemonitoring**](/inhoud/energiemonitoring/) - [**Watervoorziening**](/inhoud/aquaMonitoring/) - [**Dashboard**](/inhoud/dashboard/) - [**Modulariteit**](/inhoud/modulariteit/) - [**Plantsensing**](/inhoud/plantensensor/) - [**Operation**](/inhoud/operation/) - [**Logboek**](/inhoud/logboek/)
-
----
-
-# Rechter LED-array: Yuta en Jualiang
-Deze LED-array bestaat uit twee identieke [PCB's](../leds/index.md) die parallel gevoed worden.
-
-Deze LED-array wordt gevoed door [1 stroombron van 1050mA](https://www.mouser.be/ProductDetail/MEAN-WELL/LPC-60-1050?qs=O2yOKspD61CwHxEZesuS%2Fw%3D%3D) en [2 stroombronnen van 350mA](https://www.mouser.be/ProductDetail/MEAN-WELL/APC-12-350?qs=DNaZHaGatO0h%2FjPDgBoC1g%3D%3D).
-
-- De 72 witte en 12 blauwe LED's worden gevoed door de 1050mA bron omdat hun doorlaatspanning vergelijkbaar is (Vf~wit~ = 2,85V, Vf~blauw~ = 3V).
-    - Elke witte LED heeft 3V (omdat deze parallel staat met de blauwe LED's) en en een stroom van 75mA. Het vermogen dat door de witte LED's gaat is dus (3V * 0,075A * 72 =) 16,2W.
-    - Elke blauwe LED heeft een doorlaatspanning van 3V en 75mA. Het vermogen dat door de blauwe LED's gaat is dus (3V * 0,075A * 12 =) 2,7W.
-
-- De 12 rode LED's worden gevoed door 1 stroom bron van 350mA. Deze voedt de rode LED's op de twee PCB's parallel. Elke rode LED heeft een doorlaatspanning van 2,15V en een stroom van 175mA. Het vermogen dat door de rode LED's gaat is dus (2,15V * 0,175A * 12 =) 4,5W.
-
-- De 12 far red LED's worden gevoed door 1 stroombron van 350mA. Deze voedt de infrarood LED's op de twee PCB's parallel. Elke infrarood LED heeft een doorlaatspanning van 2,15V en en een stroom van 175mA. Het vermogen dat door de far red LED's gaat is dus (2,15V * 0,175A * 12 =) 4,5W.
-
-Het totale stroomverbruik is theoretisch 27,9W wanneer ze aan staan.
-
-Merk op dat de plus klem van de stroombron telkens verbonden wordt met de min pad op het bord. Dit komt door een fout bij het ontwerpen van de LED-component in het PCB design.
-De bedrading gebeurt als volgt:
-
-<img src="Yuta_Jualiang_bedrading.png" alt="alt text" style="width:600px;">
-
-
+[**Home**](https://klaasmeersman.github.io/) - [**LEDs and PCB**](/inhoud/leds/) - [**LED Control and Sources**](/inhoud/aansturingLEDs/) - [**Energy Monitoring**](/inhoud/energiemonitoring/) - [**Water Supply**](/inhoud/aquaMonitoring/) - [**Dashboard**](/inhoud/dashboard/) - [**Modularity**](/inhoud/modulariteit/) - [**Plant Sensing**](/inhoud/plantensensor/) - [**Operation**](/inhoud/operation/) - [**Logbook**](/inhoud/logboek/)
 
 ---
 
-# Midden LED-array: M𝔲ήeeв
+# Right LED Array: Yuta and Jualiang
+This LED array consists of two identical [PCBs](../leds/index.md) that are powered in parallel.
 
-Deze LED-array bestaat uit twee identieke [PCB's](../leds/index.md) die parallel gevoed worden.
+This LED array is powered by [one 1050mA constant current source](https://www.mouser.be/ProductDetail/MEAN-WELL/LPC-60-1050?qs=O2yOKspD61CwHxEZesuS%2Fw%3D%3D) and [two 350mA constant current sources](https://www.mouser.be/ProductDetail/MEAN-WELL/APC-12-350?qs=DNaZHaGatO0h%2FjPDgBoC1g%3D%3D).
 
-Deze LED-array bestaat uit twee identieke PCB's die parallel gevoed worden (zie in LED en PCB voor schema's van de PCB's) [2 stroombronnen van 1400mA](https://www.mouser.be/ProductDetail/MEAN-WELL/LPC-60-1400?qs=O2yOKspD61Aj4Vv%2BmwlI7Q%3D%3D) en [1 stroombron van 1050mA](https://www.mouser.be/ProductDetail/MEAN-WELL/LPC-60-1050?qs=O2yOKspD61CwHxEZesuS%2Fw%3D%3D).
+- The 72 white and 12 blue LEDs are powered by the 1050mA source because their forward voltages are comparable (Vf~white~ = 2.85V, Vf~blue~ = 3V).
+    - Each white LED has 3V (as they are in parallel with the blue LEDs) and a current of 75mA. The power through the white LEDs is therefore (3V * 0.075A * 72 =) 16.2W.
+    - Each blue LED has a forward voltage of 3V and 75mA. The power through the blue LEDs is therefore (3V * 0.075A * 12 =) 2.7W.
 
-- De 72 rode LED's worden gevoed door 1 stroom bron van 1400mA. Deze voedt de rode LED's op de twee PCB's parallel. Elke rode LED heeft 350mA die er doorheen gaat. Elke rode LED heeft een doorlaatspanning van 2,09V en een stroom van350mA. Het vermogen dat door de rode LED's gaat is dus (2,09V * 0,35 A * 72 =) 53W.
-- De 24 witte LED's worden gevoed door 1 stroom bron van 1400mA. Deze voedt de witte LED's op de twee PCB's parallel. Elke witte LED heeft een doorlaatspanning van 2,8V en een stroom van 700mA. Het vermogen dat door de witte LED's gaat is dus (2,8V * 0,7 A * 24 =) 47W.
-- De 24 blauwe LED's worden gevoed door 1 stroom bron van 1050mA. Deze voedt de blauwe LED's op de twee PCB's parallel. Elke blauwe LED heeft een doorlaatspanning van 3V en een stroom van 175mA. Het vermogen dat door de blauwe LED's gaat is dus (3V * 0,175 A * 24 =) 12,6W.
+- The 12 red LEDs are powered by one 350mA power source. This powers the red LEDs on the two PCBs in parallel. Each red LED has a forward voltage of 2.15V and a current of 175mA. The power through the red LEDs is therefore (2.15V * 0.175A * 12 =) 4.5W.
 
-Het totale stroomverbruik is theoretisch 112,6W wanneer ze aan staan.
+- The 12 far-red LEDs are powered by one 350mA power source. This powers the infrared LEDs on the two PCBs in parallel. Each infrared LED has a forward voltage of 2.15V and a current of 175mA. The power through the far-red LEDs is therefore (2.15V * 0.175A * 12 =) 4.5W.
 
-De bedrading gebeurt als volgt:
+The total power consumption is theoretically 27.9W when they are on.
 
-<img src="Muneeb bedrading.png" alt="alt text" style="width:600px;">
+<span style="color:red">Note that the positive terminal of the power source is connected to the negative pads on the board.</span> This is due to an error in designing the LED component in the PCB design.
+The wiring is as follows:
+
+<img src="images/Yuta_Jualiang_bedrading.png" alt="alt text" style="width:600px;">
+
 
 
 ---
 
-# Linker LED-array: Marta Pozzi en Hayato Nakanishi
+# Middle LED Array: M𝔲ήeeв
 
-Deze LED-array bestaat uit 4 [PCB's](../leds/index.md): x3 type1 en x1 type2.
+This LED array consists of two identical [PCBs](../leds/index.md) that are powered in parallel.
 
-Deze LED-array wordt gevoed door 1 stroombron van 200mA, [1 stroombron van 500mA](https://www.mouser.be/ProductDetail/RECOM-Power/RACT12-500?qs=gt1LBUVyoHnLAK5OjzGrww%3D%3D) en [1 stroombron van 1400mA](https://www.mouser.be/ProductDetail/MEAN-WELL/PCD-25-1400B?qs=%2F%2Bo%2FYLy8OFqnTDCUJjd14g%3D%3D).
+This LED array consists of two identical PCBs that are powered in parallel (see LEDs and PCB for schematics of the PCBs) [two 1400mA constant current sources](https://www.mouser.be/ProductDetail/MEAN-WELL/LPC-60-1400?qs=O2yOKspD61Aj4Vv%2BmwlI7Q%3D%3D) and [one 1050mA constant current source](https://www.mouser.be/ProductDetail/MEAN-WELL/LPC-60-1050?qs=O2yOKspD61CwHxEZesuS%2Fw%3D%3D).
 
-Er zijn 11 blauwe LED's, 17 rode en 55 far-red.
+- The 72 red LEDs are powered by one 1400mA power source. This powers the red LEDs on the two PCBs in parallel. Each red LED has 350mA going through it. Each red LED has a forward voltage of 2.09V and a current of 350mA. The power through the red LEDs is therefore (2.09V * 0.35A * 72 =) 53W.
+- The 24 white LEDs are powered by one 1400mA power source. This powers the white LEDs on the two PCBs in parallel. Each white LED has a forward voltage of 2.8V and a current of 700mA. The power through the white LEDs is therefore (2.8V * 0.7A * 24 =) 47W.
+- The 24 blue LEDs are powered by one 1050mA power source. This powers the blue LEDs on the two PCBs in parallel. Each blue LED has a forward voltage of 3V and a current of 175mA. The power through the blue LEDs is therefore (3V * 0.175A * 24 =) 12.6W.
 
-Vermogen dissipatie:
-- blauw: 6,2W
-- rood 5,5W
-- infrarood 20,5W
+The total power consumption is theoretically 112.6W when they are on.
 
-Het totale stroomverbruik is theoretisch 32,2W wanneer ze aan staan.
+The wiring is as follows:
 
-De bedrading gebeurt als volgt:
+<img src="images/Muneeb bedrading.png" alt="alt text" style="width:600px;">
 
-<img src="LED1.jpg" alt="alt text" style="width:600px;">
 
-# Aansturen van de LED-bronnen
-De LED-bronnen worden aangestuurd door een controller board(POWERLOGGER, LEDs SWITCH board).
+---
+
+# Left LED Array: Marta Pozzi and Hayato Nakanishi
+
+This LED array consists of 4 [PCBs](../leds/index.md): x3 type1 and x1 type2.
+
+This LED array is powered by one 200mA constant current source, [one 500mA constant current source](https://www.mouser.be/ProductDetail/RECOM-Power/RACT12-500?qs=gt1LBUVyoHnLAK5OjzGrww%3D%3D), and [one 1400mA constant current source](https://www.mouser.be/ProductDetail/MEAN-WELL/PCD-25-1400B?qs=%2F%2Bo%2FYLy8OFqnTDCUJjd14g%3D%3D).
+
+There are 11 blue LEDs, 17 red, and 55 far-red.
+
+Power dissipation:
+- blue: 6.2W
+- red: 5.5W
+- infrared: 20.5W
+
+The total power consumption is theoretically 32.2W when they are on.
+
+The wiring is as follows:
+
+<img src="images/Martha_Hayato_bedrading.jpg" alt="alt text" style="width:600px;">
+
+# Controlling the LED Sources
+The LED sources are controlled by a controller board (POWERLOGGER, LEDs SWITCH board).
 
 <iframe src="PowerloggerBrd.pdf" width="100%" height="600px"></iframe>
 
-De aansturing gebeurd door de stroom van de verschillende stroombronnen te onderbreken of door te laten met een relais. Deze is aangestuurd door een MOSFET die op zijn beurt is aangestuurd door een ESP32.
-
+The control is achieved by interrupting or allowing the current from the different current sources with a relay. This is controlled by a MOSFET, which in turn is controlled by an ESP32.
 
 [Files](https://github.com/KlaasMeersman/KlaasMeersman.github.io/tree/main/inhoud/energiemonitoring/PCBs%20Bert%20(Type1%2C%20Type2%2C%20Powerlogger)/PowerLogger)
 
-
- Deze PCB wordt ook gebruikt voor de [vermogingsmetingen](../energiemonitoring/index.md).
+This PCB is also used for the [power measurements](../energiemonitoring/index.md).
