@@ -1,0 +1,79 @@
+# Loads default set of integrations. Do not remove.
+default_config:
+
+# Load frontend themes from the themes folder
+frontend:
+  themes: !include_dir_merge_named themes
+
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+influxdb:
+  api_version: 2
+  ssl: false
+  host: 192.168.0.40
+  port: 8086
+  token: 5BdhWk0HV-8s79dOrySiHlZrwz-fnBp9EpkyCX1pFaJrguEgesuhYcuTnrhLYs_Bwq_IeAGynlnXr5RaMgc5tg==
+  organization: VF
+  bucket: VF
+  tags:
+    source: HA
+  tags_attributes:
+    - friendly_name
+  default_measurement: units
+
+mqtt: 
+  sensor:
+    - name: "Afstand waterbak"
+      state_topic: "ULTRASOON"
+      unit_of_measurement: 'cm'
+
+    - name: "ISE_NO3"
+      state_topic: "ISE_NO3"
+      unit_of_measurement: 'mg/l'
+
+    - name: "ISE_CA2"
+      state_topic: "ISE_CA2"
+      unit_of_measurement: 'mg/l'
+
+    - name: "ISE_K"
+      state_topic: "ISE_K"
+      unit_of_measurement: 'mg/l'
+
+    - name: "Energie LED 1"
+      state_topic: "LED1"
+      unit_of_measurement: 'W'
+
+    - name: "Energie LED 2"
+      state_topic: "LED2"
+      unit_of_measurement: 'W'
+  switch: 
+    - name: "Team 1 Type 1"
+      command_topic: "LICHT/LICHT1"
+      state_topic: "LICHT/LICHT1"
+      payload_on: 1 
+      payload_off: 0
+
+    - name: "Team 1 Type 2"
+      state_topic: "LICHT/LICHT2"
+      command_topic: "LICHT/LICHT2"
+      payload_on: 1
+      payload_off: 0
+
+    - name: "Team 2"
+      command_topic: "LICHT/LICHT3"
+      state_topic: "LICHT/LICHT3"
+      payload_on: 1
+      payload_off: 0
+
+    - name: "Team 3 Type 1"
+      command_topic: "LICHT/LICHT4"
+      state_topic: "LICHT/LICHT4"
+      payload_on: 1
+      payload_off: 0
+
+    - name: "Team 3 Type 2"
+      command_topic: "LICHT/LICHT5"
+      state_topic: "LICHT/LICHT5"
+      payload_on: 1
+      payload_off: 0
