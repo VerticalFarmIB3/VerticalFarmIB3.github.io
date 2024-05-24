@@ -1,0 +1,3368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="9.7.0">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
+<layer number="3" name="Route3" color="17" fill="1" visible="no" active="no"/>
+<layer number="4" name="Route4" color="18" fill="1" visible="no" active="no"/>
+<layer number="5" name="Route5" color="19" fill="1" visible="no" active="no"/>
+<layer number="6" name="Route6" color="25" fill="1" visible="no" active="no"/>
+<layer number="7" name="Route7" color="26" fill="1" visible="no" active="no"/>
+<layer number="8" name="Route8" color="27" fill="1" visible="no" active="no"/>
+<layer number="9" name="Route9" color="28" fill="1" visible="no" active="no"/>
+<layer number="10" name="Route10" color="29" fill="1" visible="no" active="no"/>
+<layer number="11" name="Route11" color="30" fill="1" visible="no" active="no"/>
+<layer number="12" name="Route12" color="20" fill="1" visible="no" active="no"/>
+<layer number="13" name="Route13" color="21" fill="1" visible="no" active="no"/>
+<layer number="14" name="Route14" color="22" fill="1" visible="no" active="no"/>
+<layer number="15" name="Route15" color="23" fill="1" visible="no" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="no"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="88" name="SimResults" color="9" fill="1" visible="no" active="no"/>
+<layer number="89" name="SimProbes" color="9" fill="1" visible="no" active="no"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="no" active="no"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="no" active="no"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="no" active="no"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="no" active="no"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="no" active="no"/>
+<layer number="95" name="Names" color="7" fill="1" visible="no" active="no"/>
+<layer number="96" name="Values" color="7" fill="1" visible="no" active="no"/>
+<layer number="97" name="Info" color="7" fill="1" visible="no" active="no"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="no" active="no"/>
+</layers>
+<board>
+<plain>
+<wire x1="0" y1="0" x2="99.99" y2="0" width="0" layer="20"/>
+<wire x1="99.99" y1="0" x2="99.99" y2="100" width="0" layer="20"/>
+<wire x1="99.99" y1="100" x2="0" y2="100" width="0" layer="20"/>
+<wire x1="0" y1="100" x2="0" y2="0" width="0" layer="20"/>
+<dimension x1="0" y1="101" x2="100" y2="101" x3="50" y3="110" textsize="1.778" layer="1"/>
+<dimension x1="-1" y1="0" x2="-1" y2="100" x3="-4" y3="50" textsize="1.778" layer="1"/>
+<rectangle x1="0" y1="0" x2="100" y2="100" layer="30"/>
+<hole x="6" y="94" drill="2.5"/>
+<hole x="94" y="94" drill="2.5"/>
+<hole x="94" y="6" drill="2.5"/>
+<hole x="6" y="6" drill="2.5"/>
+<text x="25" y="2" size="1.27" layer="21">Klaas Meersman
+Bert Pyck</text>
+<text x="58" y="2" size="1.27" layer="21">WHITE
+FR (720-740)</text>
+<text x="11" y="2" size="3.81" layer="21">IB 3</text>
+<text x="41" y="2" size="1.27" layer="21">Yuta
+Jualiang</text>
+<text x="71" y="2" size="1.27" layer="21">RED (650-670)
+BLUE (440-455)</text>
+</plain>
+<libraries>
+<library name="Luxeon SunPlus 2835" urn="urn:adsk.wipprod:fs.file:vf.7Z4dwja_SPWNX9mvQVbR3A">
+<description>&lt;High Power LEDs - Single Color 2835 Mid-Power ColorFar Red 720-740nm&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
+<packages>
+<package name="L1SP-PNK1002800000" library_version="12">
+<description>&lt;b&gt;JE2835AFR-N-0001A0000-N0000001-1&lt;/b&gt;&lt;br&gt;
+</description>
+<text x="-0.29" y="-3.06" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="-0.02" y="-4.32" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-1.75" y1="-1.4" x2="1.75" y2="-1.4" width="0.1" layer="51"/>
+<wire x1="1.75" y1="-1.4" x2="1.75" y2="1.4" width="0.1" layer="51"/>
+<wire x1="1.75" y1="1.4" x2="-1.75" y2="1.4" width="0.1" layer="51"/>
+<wire x1="-1.75" y1="1.4" x2="-1.75" y2="-1.4" width="0.1" layer="51"/>
+<wire x1="-2.945" y1="2.4" x2="2.945" y2="2.4" width="0.1" layer="51"/>
+<wire x1="2.945" y1="2.4" x2="2.945" y2="-2.4" width="0.1" layer="51"/>
+<wire x1="2.945" y1="-2.4" x2="-2.945" y2="-2.4" width="0.1" layer="51"/>
+<wire x1="-2.945" y1="-2.4" x2="-2.945" y2="2.4" width="0.1" layer="51"/>
+<wire x1="-1.75" y1="1.2" x2="-1.75" y2="1.4" width="0.2" layer="21"/>
+<wire x1="-1.75" y1="1.4" x2="1.75" y2="1.4" width="0.2" layer="21"/>
+<wire x1="1.75" y1="1.4" x2="1.75" y2="1.2" width="0.2" layer="21"/>
+<wire x1="-1.75" y1="-1.2" x2="-1.75" y2="-1.4" width="0.2" layer="21"/>
+<wire x1="-1.75" y1="-1.4" x2="1.75" y2="-1.4" width="0.2" layer="21"/>
+<wire x1="1.75" y1="-1.4" x2="1.75" y2="-1.2" width="0.2" layer="21"/>
+<wire x1="-2.7" y1="0" x2="-2.6" y2="0" width="0.1" layer="21" curve="180"/>
+<wire x1="-2.6" y1="0" x2="-2.7" y2="0" width="0.1" layer="21" curve="180"/>
+<dimension x1="0.78" y1="-0.95" x2="0.28" y2="-0.95" x3="0.53" y3="-1.93" textsize="0.254" layer="47" width="0"/>
+<dimension x1="0.78" y1="0.97" x2="1.75" y2="0.97" x3="1.265" y3="1.51" textsize="0.254" layer="47" width="0"/>
+<dimension x1="0.28" y1="0.96" x2="-1.75" y2="0.96" x3="-0.735" y3="1.51" textsize="0.254" layer="47" width="0"/>
+<dimension x1="-1.77" y1="0.95" x2="-1.77" y2="-0.95" x3="-2.2" y3="0" textsize="0.254" layer="47" width="0"/>
+<dimension x1="0" y1="0" x2="0.28" y2="0" x3="0.14" y3="0.06" textsize="0.254" layer="47" width="0"/>
+<smd name="1" x="-0.735" y="0" dx="2.03" dy="1.9" layer="1"/>
+<smd name="2" x="1.265" y="0" dx="0.97" dy="1.9" layer="1" rot="R180"/>
+</package>
+</packages>
+</library>
+<library name="LibraryLEDs" urn="urn:adsk.wipprod:fs.file:vf.lVBJ_MekSmWXw5pmyBoq9Q">
+<description>&lt;Mid-Power LEDs - Single Colour 2835 Mid-Power ColorRoyal Blue 440-460nm&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
+<packages>
+<package name="SOLDERPAD" urn="urn:adsk.eagle:footprint:30823/1" locally_modified="yes" library_version="12">
+<description>&lt;b&gt;SMD PAD&lt;/b&gt;</description>
+<smd name="1" x="0" y="0" dx="2.54" dy="10.16" layer="1"/>
+<text x="0" y="0" size="0.0254" layer="27">&gt;VALUE</text>
+<text x="-1.5" y="-2.5" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+</package>
+</packages>
+<packages3d>
+<package3d name="SMD2,54-5,08" urn="urn:adsk.eagle:package:30841/1" type="box">
+<description>SMD PAD</description>
+<packageinstances>
+<packageinstance name="SOLDERPAD"/>
+</packageinstances>
+</package3d>
+</packages3d>
+</library>
+</libraries>
+<attributes>
+<attribute name="NAMES" value="Juta"/>
+</attributes>
+<variantdefs>
+</variantdefs>
+<classes>
+<class number="0" name="default" width="0.5" drill="0.3">
+<clearance class="0" value="0.1"/>
+</class>
+</classes>
+<designrules name="PCBWay_2L_152um-Track">
+<param name="mdWireWire" value="6mil"/>
+<param name="mdWirePad" value="6mil"/>
+<param name="mdWireVia" value="6mil"/>
+<param name="mdPadPad" value="6mil"/>
+<param name="mdPadVia" value="6mil"/>
+<param name="mdViaVia" value="6mil"/>
+<param name="mdSmdPad" value="0mil"/>
+<param name="mdSmdVia" value="0mil"/>
+<param name="mdSmdSmd" value="0mil"/>
+<param name="mdCopperDimension" value="0.3mm"/>
+<param name="mdDrill" value="10mil"/>
+<param name="msWidth" value="6mil"/>
+<param name="msDrill" value="0.3mm"/>
+<param name="dpMaxLengthDifference" value="10mm"/>
+<param name="dpGapFactor" value="2.5"/>
+<description language="de">&lt;b&gt;PCBWay EAGLE Design Rules für 2 Lagen Standard &lt;/b&gt;
+&lt;br&gt;
+1 Unze, 152µm Leiter, 0.3mm Drill
+&lt;p&gt;
+&lt;b&gt;Bitte beachten:&lt;/b&gt;
+&lt;ul type=&quot;square&quot;&gt;
+	&lt;li&gt;Die Option &lt;b&gt;Abstand-Kupfer/Dimension&lt;/b&gt; ist auf 0,3 mm eingestellt, die Standardeinstellung für Platinen mit gefrästem Platinenumriss. Wenn Sie einen V-Schnitt auf Ihrer Platine benötigen, sollte dieser Parameter auf 0,45 mm eingestellt werden.&lt;/li&gt;
+	&lt;li&gt;Die Mindestbreite des plattierten Schlitzes beträgt 0,5 mm.&lt;/li&gt;
+	&lt;li&gt;Die Mindestbreite des nicht plattierten Schlitzes beträgt 0,8 mm.&lt;/li&gt;
+&lt;/ul&gt;
+Weitere Hinweise finden Sie unter &lt;b&gt;PCBWay PCB-Funktionen&lt;/b&gt; auf unserer Webseite &lt;a href=&quot;https://www.pcbway.com/capabilities.html&quot;&gt;www.pcbway.com&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+Ihr PCBWay Team
+&lt;br&gt;&lt;br&gt;
+&lt;em&gt;Alle Angaben ohne Gewähr! Eine perfekte Einstellung der Design-Rules kann verständlicherweise nur durch den Anwender erfolgen.&lt;/em&gt;
+&lt;/p&gt;</description>
+<description language="en">&lt;b&gt;PCBWay EAGLE Design Rules for 2 layers standard &lt;/b&gt;
+&lt;br&gt;
+1oz, 152µm tracks, 0.3mm drills
+&lt;p&gt;
+&lt;b&gt;Please note:&lt;/b&gt;
+&lt;ul type=&quot;square&quot;&gt;
+	&lt;li&gt;The option &lt;b&gt;Distance-Copper/Dimension&lt;/b&gt; is set to 0.3mm, the default for boards with a routed board outline. If you require V-cut on your board this parameter should be set to 0.45mm.&lt;/li&gt;
+	&lt;li&gt;Minimum plated slot width is 0.5mm.&lt;/li&gt;
+	&lt;li&gt;Minimum non-plated slot width is 0.8mm.&lt;/li&gt;
+&lt;/ul&gt;
+For more information, see &lt;b&gt;PCBWay PCB Capabilities&lt;/b&gt; on our website &lt;a href=&quot;https://www.pcbway.com/capabilities.html&quot;&gt;www.pcbway.com&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+Your PCBWay Team
+&lt;br&gt;&lt;br&gt;
+&lt;em&gt;All statements without guarantee! A perfect setting of design rules can understandably only be performed by the user.&lt;/em&gt;
+&lt;/p&gt;</description>
+<param name="layerSetup" value="(1*16)"/>
+<param name="mtCopper" value="0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm"/>
+<param name="mtIsolate" value="1.5mm 0.71mm 0.36mm 0.2mm 0.2mm 0.2mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
+<param name="mdViaViaSameLayer" value="0.2mm"/>
+<param name="mnLayersViaInSmd" value="2"/>
+<param name="mdSmdStop" value="0mil"/>
+<param name="msMicroVia" value="0.2mm"/>
+<param name="msBlindViaRatio" value="0.5"/>
+<param name="rvPadTop" value="0.25"/>
+<param name="rvPadInner" value="0.25"/>
+<param name="rvPadBottom" value="0.25"/>
+<param name="rvViaOuter" value="0.25"/>
+<param name="rvViaInner" value="0.25"/>
+<param name="rvMicroViaOuter" value="0.25"/>
+<param name="rvMicroViaInner" value="0.25"/>
+<param name="rlMinPadTop" value="6mil"/>
+<param name="rlMaxPadTop" value="0.75mm"/>
+<param name="rlMinPadInner" value="6mil"/>
+<param name="rlMaxPadInner" value="0.75mm"/>
+<param name="rlMinPadBottom" value="6mil"/>
+<param name="rlMaxPadBottom" value="0.75mm"/>
+<param name="rlMinViaOuter" value="0.1mm"/>
+<param name="rlMaxViaOuter" value="1mm"/>
+<param name="rlMinViaInner" value="0.1mm"/>
+<param name="rlMaxViaInner" value="1mm"/>
+<param name="rlMinMicroViaOuter" value="0.1mm"/>
+<param name="rlMaxMicroViaOuter" value="0.75mm"/>
+<param name="rlMinMicroViaInner" value="0.1mm"/>
+<param name="rlMaxMicroViaInner" value="0.75mm"/>
+<param name="psTop" value="-1"/>
+<param name="psBottom" value="-1"/>
+<param name="psFirst" value="-1"/>
+<param name="psElongationLong" value="100"/>
+<param name="psElongationOffset" value="100"/>
+<param name="mvStopFrame" value="1"/>
+<param name="mvCreamFrame" value="0"/>
+<param name="mlMinStopFrame" value="2mil"/>
+<param name="mlMaxStopFrame" value="2mil"/>
+<param name="mlMinCreamFrame" value="0mil"/>
+<param name="mlMaxCreamFrame" value="0mil"/>
+<param name="mlViaStopLimit" value="0.45mm"/>
+<param name="srRoundness" value="0"/>
+<param name="srMinRoundness" value="0mil"/>
+<param name="srMaxRoundness" value="0mil"/>
+<param name="slThermalIsolate" value="0.2mm"/>
+<param name="slThermalsForVias" value="0"/>
+<param name="checkAngle" value="0"/>
+<param name="checkRestrict" value="1"/>
+<param name="checkStop" value="0"/>
+<param name="checkValues" value="0"/>
+<param name="checkNames" value="1"/>
+<param name="checkWireStubs" value="1"/>
+<param name="checkPolygonWidth" value="0"/>
+<param name="useDiameter" value="13"/>
+<param name="maxErrors" value="50"/>
+</designrules>
+<autorouter>
+<pass name="Default">
+<param name="RoutingGrid" value="50mil"/>
+<param name="AutoGrid" value="1"/>
+<param name="Efforts" value="0"/>
+<param name="TopRouterVariant" value="1"/>
+<param name="tpViaShape" value="round"/>
+<param name="PrefDir.1" value="a"/>
+<param name="PrefDir.2" value="0"/>
+<param name="PrefDir.3" value="0"/>
+<param name="PrefDir.4" value="0"/>
+<param name="PrefDir.5" value="0"/>
+<param name="PrefDir.6" value="0"/>
+<param name="PrefDir.7" value="0"/>
+<param name="PrefDir.8" value="0"/>
+<param name="PrefDir.9" value="0"/>
+<param name="PrefDir.10" value="0"/>
+<param name="PrefDir.11" value="0"/>
+<param name="PrefDir.12" value="0"/>
+<param name="PrefDir.13" value="0"/>
+<param name="PrefDir.14" value="0"/>
+<param name="PrefDir.15" value="0"/>
+<param name="PrefDir.16" value="a"/>
+<param name="cfVia" value="8"/>
+<param name="cfNonPref" value="5"/>
+<param name="cfChangeDir" value="2"/>
+<param name="cfOrthStep" value="2"/>
+<param name="cfDiagStep" value="3"/>
+<param name="cfExtdStep" value="0"/>
+<param name="cfBonusStep" value="1"/>
+<param name="cfMalusStep" value="1"/>
+<param name="cfPadImpact" value="4"/>
+<param name="cfSmdImpact" value="4"/>
+<param name="cfBusImpact" value="0"/>
+<param name="cfHugging" value="3"/>
+<param name="cfAvoid" value="4"/>
+<param name="cfPolygon" value="10"/>
+<param name="cfBase.1" value="0"/>
+<param name="cfBase.2" value="1"/>
+<param name="cfBase.3" value="1"/>
+<param name="cfBase.4" value="1"/>
+<param name="cfBase.5" value="1"/>
+<param name="cfBase.6" value="1"/>
+<param name="cfBase.7" value="1"/>
+<param name="cfBase.8" value="1"/>
+<param name="cfBase.9" value="1"/>
+<param name="cfBase.10" value="1"/>
+<param name="cfBase.11" value="1"/>
+<param name="cfBase.12" value="1"/>
+<param name="cfBase.13" value="1"/>
+<param name="cfBase.14" value="1"/>
+<param name="cfBase.15" value="1"/>
+<param name="cfBase.16" value="0"/>
+<param name="mnVias" value="20"/>
+<param name="mnSegments" value="9999"/>
+<param name="mnExtdSteps" value="9999"/>
+<param name="mnRipupLevel" value="10"/>
+<param name="mnRipupSteps" value="100"/>
+<param name="mnRipupTotal" value="100"/>
+</pass>
+<pass name="Follow-me" refer="Default" active="yes">
+</pass>
+<pass name="Busses" refer="Default" active="yes">
+<param name="cfNonPref" value="4"/>
+<param name="cfBusImpact" value="4"/>
+<param name="cfHugging" value="0"/>
+<param name="mnVias" value="0"/>
+</pass>
+<pass name="Route" refer="Default" active="yes">
+</pass>
+<pass name="Optimize1" refer="Default" active="yes">
+<param name="cfVia" value="99"/>
+<param name="cfExtdStep" value="10"/>
+<param name="cfHugging" value="1"/>
+<param name="mnExtdSteps" value="1"/>
+<param name="mnRipupLevel" value="0"/>
+</pass>
+<pass name="Optimize2" refer="Optimize1" active="yes">
+<param name="cfNonPref" value="0"/>
+<param name="cfChangeDir" value="6"/>
+<param name="cfExtdStep" value="0"/>
+<param name="cfBonusStep" value="2"/>
+<param name="cfMalusStep" value="2"/>
+<param name="cfPadImpact" value="2"/>
+<param name="cfSmdImpact" value="2"/>
+<param name="cfHugging" value="0"/>
+</pass>
+<pass name="Optimize3" refer="Optimize2" active="yes">
+<param name="cfChangeDir" value="8"/>
+<param name="cfPadImpact" value="0"/>
+<param name="cfSmdImpact" value="0"/>
+</pass>
+<pass name="Optimize4" refer="Optimize3" active="yes">
+<param name="cfChangeDir" value="25"/>
+</pass>
+</autorouter>
+<elements>
+<element name="LED2" library="Luxeon SunPlus 2835" library_urn="urn:adsk.wipprod:fs.file:vf.7Z4dwja_SPWNX9mvQVbR3A" package="L1SP-PNK1002800000" value="BLUE" x="37" y="40" smashed="yes" rot="R180">
+<attribute name="DESCRIPTION" value="High Power LEDs - Single Color 2835 Mid-Power ColorFar Red 720-740nm" x="45" y="31" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="mm" x="45" y="31" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="CREE LED" x="45" y="31" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="JE2835AFR-N-0001A0000-N0000001" x="45" y="31" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="941-JE2835AFRN01AN" x="45" y="31" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Cree-LED/JE2835AFR-N-0001A0000-N0000001?qs=tlsG%2FOw5FFhxeS5Ond46kw%3D%3D" x="45" y="31" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="37.29" y="43.06" size="1.27" layer="25" rot="R180" align="center"/>
+<attribute name="VALUE" x="37.02" y="45.32" size="1.27" layer="21" rot="R180" align="center"/>
+</element>
+<element name="LED3" library="Luxeon SunPlus 2835" library_urn="urn:adsk.wipprod:fs.file:vf.7Z4dwja_SPWNX9mvQVbR3A" package="L1SP-PNK1002800000" value="BLUE" x="50" y="40" smashed="yes" rot="R180">
+<attribute name="DESCRIPTION" value="High Power LEDs - Single Color 2835 Mid-Power ColorFar Red 720-740nm" x="58" y="32" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="mm" x="58" y="32" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="CREE LED" x="58" y="32" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="JE2835AFR-N-0001A0000-N0000001" x="58" y="32" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="941-JE2835AFRN01AN" x="58" y="32" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Cree-LED/JE2835AFR-N-0001A0000-N0000001?qs=tlsG%2FOw5FFhxeS5Ond46kw%3D%3D" x="58" y="32" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="50.29" y="43.06" size="1.27" layer="25" rot="R180" align="center"/>
+<attribute name="VALUE" x="50.02" y="45.32" size="1.27" layer="21" rot="R180" align="center"/>
+</element>
+<element name="LED4" library="Luxeon SunPlus 2835" library_urn="urn:adsk.wipprod:fs.file:vf.7Z4dwja_SPWNX9mvQVbR3A" package="L1SP-PNK1002800000" value="BLUE" x="63" y="40" smashed="yes" rot="R180">
+<attribute name="DESCRIPTION" value="High Power LEDs - Single Color 2835 Mid-Power ColorFar Red 720-740nm" x="71" y="32" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="mm" x="71" y="32" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="CREE LED" x="71" y="32" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="JE2835AFR-N-0001A0000-N0000001" x="71" y="32" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="941-JE2835AFRN01AN" x="71" y="32" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Cree-LED/JE2835AFR-N-0001A0000-N0000001?qs=tlsG%2FOw5FFhxeS5Ond46kw%3D%3D" x="71" y="32" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="63.29" y="43.06" size="1.27" layer="25" rot="R180" align="center"/>
+<attribute name="VALUE" x="63.02" y="45.32" size="1.27" layer="21" rot="R180" align="center"/>
+</element>
+<element name="LED5" library="Luxeon SunPlus 2835" library_urn="urn:adsk.wipprod:fs.file:vf.7Z4dwja_SPWNX9mvQVbR3A" package="L1SP-PNK1002800000" value="BLUE" x="76" y="40" smashed="yes" rot="R180">
+<attribute name="DESCRIPTION" value="High Power LEDs - Single Color 2835 Mid-Power ColorFar Red 720-740nm" x="84" y="32" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="mm" x="84" y="32" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="CREE LED" x="84" y="32" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="JE2835AFR-N-0001A0000-N0000001" x="84" y="32" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="941-JE2835AFRN01AN" x="84" y="32" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Cree-LED/JE2835AFR-N-0001A0000-N0000001?qs=tlsG%2FOw5FFhxeS5Ond46kw%3D%3D" x="84" y="32" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="76.29" y="43.06" size="1.27" layer="25" rot="R180" align="center"/>
+<attribute name="VALUE" x="76.02" y="45.32" size="1.27" layer="21" rot="R180" align="center"/>
+</element>
+<element name="LED6" library="Luxeon SunPlus 2835" library_urn="urn:adsk.wipprod:fs.file:vf.7Z4dwja_SPWNX9mvQVbR3A" package="L1SP-PNK1002800000" value="BLUE" x="89" y="40" smashed="yes" rot="R180">
+<attribute name="DESCRIPTION" value="High Power LEDs - Single Color 2835 Mid-Power ColorFar Red 720-740nm" x="97" y="32" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="mm" x="97" y="32" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="CREE LED" x="97" y="32" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="JE2835AFR-N-0001A0000-N0000001" x="97" y="32" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="941-JE2835AFRN01AN" x="97" y="32" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Cree-LED/JE2835AFR-N-0001A0000-N0000001?qs=tlsG%2FOw5FFhxeS5Ond46kw%3D%3D" x="97" y="32" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="89.29" y="43.06" size="1.27" layer="25" rot="R180" align="center"/>
+<attribute name="VALUE" x="89.02" y="45.32" size="1.27" layer="21" rot="R180" align="center"/>
+</element>
+<element name="LED8" library="Luxeon SunPlus 2835" library_urn="urn:adsk.wipprod:fs.file:vf.7Z4dwja_SPWNX9mvQVbR3A" package="L1SP-PNK1002800000" value="RED" x="37" y="70" smashed="yes" rot="R180">
+<attribute name="DESCRIPTION" value="High Power LEDs - Single Color 2835 Mid-Power ColorFar Red 720-740nm" x="45" y="62" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="mm" x="45" y="62" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="CREE LED" x="45" y="62" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="JE2835AFR-N-0001A0000-N0000001" x="45" y="62" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="941-JE2835AFRN01AN" x="45" y="62" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Cree-LED/JE2835AFR-N-0001A0000-N0000001?qs=tlsG%2FOw5FFhxeS5Ond46kw%3D%3D" x="45" y="62" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="37.29" y="73.06" size="1.27" layer="25" rot="R180" align="center"/>
+<attribute name="VALUE" x="37.02" y="75.32" size="1.27" layer="21" rot="R180" align="center"/>
+</element>
+<element name="LED9" library="Luxeon SunPlus 2835" library_urn="urn:adsk.wipprod:fs.file:vf.7Z4dwja_SPWNX9mvQVbR3A" package="L1SP-PNK1002800000" value="RED" x="50" y="70" smashed="yes" rot="R180">
+<attribute name="DESCRIPTION" value="High Power LEDs - Single Color 2835 Mid-Power ColorFar Red 720-740nm" x="58" y="62" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="mm" x="58" y="62" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="CREE LED" x="58" y="62" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="JE2835AFR-N-0001A0000-N0000001" x="58" y="62" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="941-JE2835AFRN01AN" x="58" y="62" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Cree-LED/JE2835AFR-N-0001A0000-N0000001?qs=tlsG%2FOw5FFhxeS5Ond46kw%3D%3D" x="58" y="62" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="50.29" y="73.06" size="1.27" layer="25" rot="R180" align="center"/>
+<attribute name="VALUE" x="50.02" y="75.32" size="1.27" layer="21" rot="R180" align="center"/>
+</element>
+<element name="LED10" library="Luxeon SunPlus 2835" library_urn="urn:adsk.wipprod:fs.file:vf.7Z4dwja_SPWNX9mvQVbR3A" package="L1SP-PNK1002800000" value="RED" x="63" y="70" smashed="yes" rot="R180">
+<attribute name="DESCRIPTION" value="High Power LEDs - Single Color 2835 Mid-Power ColorFar Red 720-740nm" x="71" y="62" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="mm" x="71" y="62" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="CREE LED" x="71" y="62" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="JE2835AFR-N-0001A0000-N0000001" x="71" y="62" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="941-JE2835AFRN01AN" x="71" y="62" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Cree-LED/JE2835AFR-N-0001A0000-N0000001?qs=tlsG%2FOw5FFhxeS5Ond46kw%3D%3D" x="71" y="62" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="63.29" y="73.06" size="1.27" layer="25" rot="R180" align="center"/>
+<attribute name="VALUE" x="63.02" y="75.32" size="1.27" layer="21" rot="R180" align="center"/>
+</element>
+<element name="LED11" library="Luxeon SunPlus 2835" library_urn="urn:adsk.wipprod:fs.file:vf.7Z4dwja_SPWNX9mvQVbR3A" package="L1SP-PNK1002800000" value="RED" x="76" y="70" smashed="yes" rot="R180">
+<attribute name="DESCRIPTION" value="High Power LEDs - Single Color 2835 Mid-Power ColorFar Red 720-740nm" x="84" y="62" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="mm" x="84" y="62" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="CREE LED" x="84" y="62" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="JE2835AFR-N-0001A0000-N0000001" x="84" y="62" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="941-JE2835AFRN01AN" x="84" y="62" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Cree-LED/JE2835AFR-N-0001A0000-N0000001?qs=tlsG%2FOw5FFhxeS5Ond46kw%3D%3D" x="84" y="62" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="76.29" y="73.06" size="1.27" layer="25" rot="R180" align="center"/>
+<attribute name="VALUE" x="76.02" y="75.32" size="1.27" layer="21" rot="R180" align="center"/>
+</element>
+<element name="LED12" library="Luxeon SunPlus 2835" library_urn="urn:adsk.wipprod:fs.file:vf.7Z4dwja_SPWNX9mvQVbR3A" package="L1SP-PNK1002800000" value="RED" x="89" y="70" smashed="yes" rot="R180">
+<attribute name="DESCRIPTION" value="High Power LEDs - Single Color 2835 Mid-Power ColorFar Red 720-740nm" x="97" y="62" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="mm" x="97" y="62" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="CREE LED" x="97" y="62" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="JE2835AFR-N-0001A0000-N0000001" x="97" y="62" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="941-JE2835AFRN01AN" x="97" y="62" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Cree-LED/JE2835AFR-N-0001A0000-N0000001?qs=tlsG%2FOw5FFhxeS5Ond46kw%3D%3D" x="97" y="62" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="89.29" y="73.06" size="1.27" layer="25" rot="R180" align="center"/>
+<attribute name="VALUE" x="89.02" y="75.32" size="1.27" layer="21" rot="R180" align="center"/>
+</element>
+<element name="LED14" library="Luxeon SunPlus 2835" library_urn="urn:adsk.wipprod:fs.file:vf.7Z4dwja_SPWNX9mvQVbR3A" package="L1SP-PNK1002800000" value="FR" x="37" y="10" smashed="yes" rot="R180">
+<attribute name="DESCRIPTION" value="High Power LEDs - Single Color 2835 Mid-Power ColorFar Red 720-740nm" x="45" y="2" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="mm" x="45" y="2" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="CREE LED" x="45" y="2" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="JE2835AFR-N-0001A0000-N0000001" x="45" y="2" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="941-JE2835AFRN01AN" x="45" y="2" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Cree-LED/JE2835AFR-N-0001A0000-N0000001?qs=tlsG%2FOw5FFhxeS5Ond46kw%3D%3D" x="45" y="2" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="37.29" y="13.06" size="1.27" layer="25" rot="R180" align="center"/>
+<attribute name="VALUE" x="37.02" y="15.32" size="1.27" layer="21" rot="R180" align="center"/>
+</element>
+<element name="LED15" library="Luxeon SunPlus 2835" library_urn="urn:adsk.wipprod:fs.file:vf.7Z4dwja_SPWNX9mvQVbR3A" package="L1SP-PNK1002800000" value="FR" x="50" y="10" smashed="yes" rot="R180">
+<attribute name="DESCRIPTION" value="High Power LEDs - Single Color 2835 Mid-Power ColorFar Red 720-740nm" x="58" y="2" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="mm" x="58" y="2" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="CREE LED" x="58" y="2" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="JE2835AFR-N-0001A0000-N0000001" x="58" y="2" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="941-JE2835AFRN01AN" x="58" y="2" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Cree-LED/JE2835AFR-N-0001A0000-N0000001?qs=tlsG%2FOw5FFhxeS5Ond46kw%3D%3D" x="58" y="2" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="50.29" y="13.06" size="1.27" layer="25" rot="R180" align="center"/>
+<attribute name="VALUE" x="50.02" y="15.32" size="1.27" layer="21" rot="R180" align="center"/>
+</element>
+<element name="LED16" library="Luxeon SunPlus 2835" library_urn="urn:adsk.wipprod:fs.file:vf.7Z4dwja_SPWNX9mvQVbR3A" package="L1SP-PNK1002800000" value="FR" x="63" y="10" smashed="yes" rot="R180">
+<attribute name="DESCRIPTION" value="High Power LEDs - Single Color 2835 Mid-Power ColorFar Red 720-740nm" x="71" y="2" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="mm" x="71" y="2" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="CREE LED" x="71" y="2" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="JE2835AFR-N-0001A0000-N0000001" x="71" y="2" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="941-JE2835AFRN01AN" x="71" y="2" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Cree-LED/JE2835AFR-N-0001A0000-N0000001?qs=tlsG%2FOw5FFhxeS5Ond46kw%3D%3D" x="71" y="2" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="63.29" y="13.06" size="1.27" layer="25" rot="R180" align="center"/>
+<attribute name="VALUE" x="63.02" y="15.32" size="1.27" layer="21" rot="R180" align="center"/>
+</element>
+<element name="LED17" library="Luxeon SunPlus 2835" library_urn="urn:adsk.wipprod:fs.file:vf.7Z4dwja_SPWNX9mvQVbR3A" package="L1SP-PNK1002800000" value="FR" x="76" y="10" smashed="yes" rot="R180">
+<attribute name="DESCRIPTION" value="High Power LEDs - Single Color 2835 Mid-Power ColorFar Red 720-740nm" x="84" y="2" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="mm" x="84" y="2" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="CREE LED" x="84" y="2" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="JE2835AFR-N-0001A0000-N0000001" x="84" y="2" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="941-JE2835AFRN01AN" x="84" y="2" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Cree-LED/JE2835AFR-N-0001A0000-N0000001?qs=tlsG%2FOw5FFhxeS5Ond46kw%3D%3D" x="84" y="2" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="76.29" y="13.06" size="1.27" layer="25" rot="R180" align="center"/>
+<attribute name="VALUE" x="76.02" y="15.32" size="1.27" layer="21" rot="R180" align="center"/>
+</element>
+<element name="LED18" library="Luxeon SunPlus 2835" library_urn="urn:adsk.wipprod:fs.file:vf.7Z4dwja_SPWNX9mvQVbR3A" package="L1SP-PNK1002800000" value="FR" x="89" y="10" smashed="yes" rot="R180">
+<attribute name="DESCRIPTION" value="High Power LEDs - Single Color 2835 Mid-Power ColorFar Red 720-740nm" x="97" y="2" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="mm" x="97" y="2" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="CREE LED" x="97" y="2" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="JE2835AFR-N-0001A0000-N0000001" x="97" y="2" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="941-JE2835AFRN01AN" x="97" y="2" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Cree-LED/JE2835AFR-N-0001A0000-N0000001?qs=tlsG%2FOw5FFhxeS5Ond46kw%3D%3D" x="97" y="2" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="89.29" y="13.06" size="1.27" layer="25" rot="R180" align="center"/>
+<attribute name="VALUE" x="89.02" y="15.32" size="1.27" layer="21" rot="R180" align="center"/>
+</element>
+<element name="LED20" library="Luxeon SunPlus 2835" library_urn="urn:adsk.wipprod:fs.file:vf.7Z4dwja_SPWNX9mvQVbR3A" package="L1SP-PNK1002800000" value="WHITE" x="37.1" y="90" smashed="yes" rot="R180">
+<attribute name="DESCRIPTION" value="High Power LEDs - Single Color 2835 Mid-Power ColorFar Red 720-740nm" x="45.1" y="82" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="mm" x="45.1" y="82" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="CREE LED" x="45.1" y="82" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="JE2835AFR-N-0001A0000-N0000001" x="45.1" y="82" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="941-JE2835AFRN01AN" x="45.1" y="82" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Cree-LED/JE2835AFR-N-0001A0000-N0000001?qs=tlsG%2FOw5FFhxeS5Ond46kw%3D%3D" x="45.1" y="82" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="37.39" y="93.06" size="1.27" layer="25" rot="R180" align="center"/>
+<attribute name="VALUE" x="37.12" y="95.32" size="1.27" layer="21" rot="R180" align="center"/>
+</element>
+<element name="LED21" library="Luxeon SunPlus 2835" library_urn="urn:adsk.wipprod:fs.file:vf.7Z4dwja_SPWNX9mvQVbR3A" package="L1SP-PNK1002800000" value="WHITE" x="50" y="90" smashed="yes" rot="R180">
+<attribute name="DESCRIPTION" value="High Power LEDs - Single Color 2835 Mid-Power ColorFar Red 720-740nm" x="58" y="82" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="mm" x="58" y="82" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="CREE LED" x="58" y="82" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="JE2835AFR-N-0001A0000-N0000001" x="58" y="82" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="941-JE2835AFRN01AN" x="58" y="82" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Cree-LED/JE2835AFR-N-0001A0000-N0000001?qs=tlsG%2FOw5FFhxeS5Ond46kw%3D%3D" x="58" y="82" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="50.29" y="93.06" size="1.27" layer="25" rot="R180" align="center"/>
+<attribute name="VALUE" x="50.02" y="95.32" size="1.27" layer="21" rot="R180" align="center"/>
+</element>
+<element name="LED22" library="Luxeon SunPlus 2835" library_urn="urn:adsk.wipprod:fs.file:vf.7Z4dwja_SPWNX9mvQVbR3A" package="L1SP-PNK1002800000" value="WHITE" x="63" y="90" smashed="yes" rot="R180">
+<attribute name="DESCRIPTION" value="High Power LEDs - Single Color 2835 Mid-Power ColorFar Red 720-740nm" x="71" y="82" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="mm" x="71" y="82" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="CREE LED" x="71" y="82" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="JE2835AFR-N-0001A0000-N0000001" x="71" y="82" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="941-JE2835AFRN01AN" x="71" y="82" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Cree-LED/JE2835AFR-N-0001A0000-N0000001?qs=tlsG%2FOw5FFhxeS5Ond46kw%3D%3D" x="71" y="82" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="63.29" y="93.06" size="1.27" layer="25" rot="R180" align="center"/>
+<attribute name="VALUE" x="63.02" y="95.32" size="1.27" layer="21" rot="R180" align="center"/>
+</element>
+<element name="LED23" library="Luxeon SunPlus 2835" library_urn="urn:adsk.wipprod:fs.file:vf.7Z4dwja_SPWNX9mvQVbR3A" package="L1SP-PNK1002800000" value="WHITE" x="76" y="90" smashed="yes" rot="R180">
+<attribute name="DESCRIPTION" value="High Power LEDs - Single Color 2835 Mid-Power ColorFar Red 720-740nm" x="84" y="82" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="mm" x="84" y="82" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="CREE LED" x="84" y="82" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="JE2835AFR-N-0001A0000-N0000001" x="84" y="82" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="941-JE2835AFRN01AN" x="84" y="82" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Cree-LED/JE2835AFR-N-0001A0000-N0000001?qs=tlsG%2FOw5FFhxeS5Ond46kw%3D%3D" x="84" y="82" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="76.29" y="93.06" size="1.27" layer="25" rot="R180" align="center"/>
+<attribute name="VALUE" x="76.02" y="95.32" size="1.27" layer="21" rot="R180" align="center"/>
+</element>
+<element name="LED24" library="Luxeon SunPlus 2835" library_urn="urn:adsk.wipprod:fs.file:vf.7Z4dwja_SPWNX9mvQVbR3A" package="L1SP-PNK1002800000" value="WHITE" x="89" y="90" smashed="yes" rot="R180">
+<attribute name="DESCRIPTION" value="High Power LEDs - Single Color 2835 Mid-Power ColorFar Red 720-740nm" x="97" y="82" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="mm" x="97" y="82" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="CREE LED" x="97" y="82" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="JE2835AFR-N-0001A0000-N0000001" x="97" y="82" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="941-JE2835AFRN01AN" x="97" y="82" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Cree-LED/JE2835AFR-N-0001A0000-N0000001?qs=tlsG%2FOw5FFhxeS5Ond46kw%3D%3D" x="97" y="82" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="89.29" y="93.06" size="1.27" layer="25" rot="R180" align="center"/>
+<attribute name="VALUE" x="89.02" y="95.32" size="1.27" layer="21" rot="R180" align="center"/>
+</element>
+<element name="LED25" library="Luxeon SunPlus 2835" library_urn="urn:adsk.wipprod:fs.file:vf.7Z4dwja_SPWNX9mvQVbR3A" package="L1SP-PNK1002800000" value="WHITE" x="24" y="80" smashed="yes" rot="R180">
+<attribute name="DESCRIPTION" value="High Power LEDs - Single Color 2835 Mid-Power ColorFar Red 720-740nm" x="32" y="72" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="mm" x="32" y="72" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="CREE LED" x="32" y="72" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="JE2835AFR-N-0001A0000-N0000001" x="32" y="72" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="941-JE2835AFRN01AN" x="32" y="72" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Cree-LED/JE2835AFR-N-0001A0000-N0000001?qs=tlsG%2FOw5FFhxeS5Ond46kw%3D%3D" x="32" y="72" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="24.29" y="83.06" size="1.27" layer="25" rot="R180" align="center"/>
+<attribute name="VALUE" x="24.02" y="85.32" size="1.27" layer="21" rot="R180" align="center"/>
+</element>
+<element name="LED26" library="Luxeon SunPlus 2835" library_urn="urn:adsk.wipprod:fs.file:vf.7Z4dwja_SPWNX9mvQVbR3A" package="L1SP-PNK1002800000" value="WHITE" x="37" y="80" smashed="yes" rot="R180">
+<attribute name="DESCRIPTION" value="High Power LEDs - Single Color 2835 Mid-Power ColorFar Red 720-740nm" x="45" y="72" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="mm" x="45" y="72" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="CREE LED" x="45" y="72" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="JE2835AFR-N-0001A0000-N0000001" x="45" y="72" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="941-JE2835AFRN01AN" x="45" y="72" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Cree-LED/JE2835AFR-N-0001A0000-N0000001?qs=tlsG%2FOw5FFhxeS5Ond46kw%3D%3D" x="45" y="72" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="37.29" y="83.06" size="1.27" layer="25" rot="R180" align="center"/>
+<attribute name="VALUE" x="37.02" y="85.32" size="1.27" layer="21" rot="R180" align="center"/>
+</element>
+<element name="LED27" library="Luxeon SunPlus 2835" library_urn="urn:adsk.wipprod:fs.file:vf.7Z4dwja_SPWNX9mvQVbR3A" package="L1SP-PNK1002800000" value="WHITE" x="50" y="80" smashed="yes" rot="R180">
+<attribute name="DESCRIPTION" value="High Power LEDs - Single Color 2835 Mid-Power ColorFar Red 720-740nm" x="58" y="72" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="mm" x="58" y="72" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="CREE LED" x="58" y="72" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="JE2835AFR-N-0001A0000-N0000001" x="58" y="72" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="941-JE2835AFRN01AN" x="58" y="72" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Cree-LED/JE2835AFR-N-0001A0000-N0000001?qs=tlsG%2FOw5FFhxeS5Ond46kw%3D%3D" x="58" y="72" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="50.29" y="83.06" size="1.27" layer="25" rot="R180" align="center"/>
+<attribute name="VALUE" x="50.02" y="85.32" size="1.27" layer="21" rot="R180" align="center"/>
+</element>
+<element name="LED28" library="Luxeon SunPlus 2835" library_urn="urn:adsk.wipprod:fs.file:vf.7Z4dwja_SPWNX9mvQVbR3A" package="L1SP-PNK1002800000" value="WHITE" x="63" y="80" smashed="yes" rot="R180">
+<attribute name="DESCRIPTION" value="High Power LEDs - Single Color 2835 Mid-Power ColorFar Red 720-740nm" x="71" y="72" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="mm" x="71" y="72" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="CREE LED" x="71" y="72" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="JE2835AFR-N-0001A0000-N0000001" x="71" y="72" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="941-JE2835AFRN01AN" x="71" y="72" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Cree-LED/JE2835AFR-N-0001A0000-N0000001?qs=tlsG%2FOw5FFhxeS5Ond46kw%3D%3D" x="71" y="72" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="63.29" y="83.06" size="1.27" layer="25" rot="R180" align="center"/>
+<attribute name="VALUE" x="63.02" y="85.32" size="1.27" layer="21" rot="R180" align="center"/>
+</element>
+<element name="LED29" library="Luxeon SunPlus 2835" library_urn="urn:adsk.wipprod:fs.file:vf.7Z4dwja_SPWNX9mvQVbR3A" package="L1SP-PNK1002800000" value="WHITE" x="76" y="80" smashed="yes" rot="R180">
+<attribute name="DESCRIPTION" value="High Power LEDs - Single Color 2835 Mid-Power ColorFar Red 720-740nm" x="84" y="72" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="mm" x="84" y="72" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="CREE LED" x="84" y="72" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="JE2835AFR-N-0001A0000-N0000001" x="84" y="72" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="941-JE2835AFRN01AN" x="84" y="72" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Cree-LED/JE2835AFR-N-0001A0000-N0000001?qs=tlsG%2FOw5FFhxeS5Ond46kw%3D%3D" x="84" y="72" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="76.29" y="83.06" size="1.27" layer="25" rot="R180" align="center"/>
+<attribute name="VALUE" x="76.02" y="85.32" size="1.27" layer="21" rot="R180" align="center"/>
+</element>
+<element name="LED30" library="Luxeon SunPlus 2835" library_urn="urn:adsk.wipprod:fs.file:vf.7Z4dwja_SPWNX9mvQVbR3A" package="L1SP-PNK1002800000" value="WHITE" x="89" y="80" smashed="yes" rot="R180">
+<attribute name="DESCRIPTION" value="High Power LEDs - Single Color 2835 Mid-Power ColorFar Red 720-740nm" x="97" y="72" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="mm" x="97" y="72" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="CREE LED" x="97" y="72" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="JE2835AFR-N-0001A0000-N0000001" x="97" y="72" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="941-JE2835AFRN01AN" x="97" y="72" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Cree-LED/JE2835AFR-N-0001A0000-N0000001?qs=tlsG%2FOw5FFhxeS5Ond46kw%3D%3D" x="97" y="72" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="89.29" y="83.06" size="1.27" layer="25" rot="R180" align="center"/>
+<attribute name="VALUE" x="89.02" y="85.32" size="1.27" layer="21" rot="R180" align="center"/>
+</element>
+<element name="LED31" library="Luxeon SunPlus 2835" library_urn="urn:adsk.wipprod:fs.file:vf.7Z4dwja_SPWNX9mvQVbR3A" package="L1SP-PNK1002800000" value="WHITE" x="24" y="60" smashed="yes" rot="R180">
+<attribute name="DESCRIPTION" value="High Power LEDs - Single Color 2835 Mid-Power ColorFar Red 720-740nm" x="32" y="52" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="mm" x="32" y="52" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="CREE LED" x="32" y="52" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="JE2835AFR-N-0001A0000-N0000001" x="32" y="52" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="941-JE2835AFRN01AN" x="32" y="52" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Cree-LED/JE2835AFR-N-0001A0000-N0000001?qs=tlsG%2FOw5FFhxeS5Ond46kw%3D%3D" x="32" y="52" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="24.29" y="63.06" size="1.27" layer="25" rot="R180" align="center"/>
+<attribute name="VALUE" x="24.02" y="65.32" size="1.27" layer="21" rot="R180" align="center"/>
+</element>
+<element name="LED32" library="Luxeon SunPlus 2835" library_urn="urn:adsk.wipprod:fs.file:vf.7Z4dwja_SPWNX9mvQVbR3A" package="L1SP-PNK1002800000" value="WHITE" x="37" y="60" smashed="yes" rot="R180">
+<attribute name="DESCRIPTION" value="High Power LEDs - Single Color 2835 Mid-Power ColorFar Red 720-740nm" x="45" y="52" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="mm" x="45" y="52" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="CREE LED" x="45" y="52" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="JE2835AFR-N-0001A0000-N0000001" x="45" y="52" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="941-JE2835AFRN01AN" x="45" y="52" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Cree-LED/JE2835AFR-N-0001A0000-N0000001?qs=tlsG%2FOw5FFhxeS5Ond46kw%3D%3D" x="45" y="52" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="37.29" y="63.06" size="1.27" layer="25" rot="R180" align="center"/>
+<attribute name="VALUE" x="37.02" y="65.32" size="1.27" layer="21" rot="R180" align="center"/>
+</element>
+<element name="LED33" library="Luxeon SunPlus 2835" library_urn="urn:adsk.wipprod:fs.file:vf.7Z4dwja_SPWNX9mvQVbR3A" package="L1SP-PNK1002800000" value="WHITE" x="50" y="60" smashed="yes" rot="R180">
+<attribute name="DESCRIPTION" value="High Power LEDs - Single Color 2835 Mid-Power ColorFar Red 720-740nm" x="58" y="52" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="mm" x="58" y="52" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="CREE LED" x="58" y="52" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="JE2835AFR-N-0001A0000-N0000001" x="58" y="52" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="941-JE2835AFRN01AN" x="58" y="52" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Cree-LED/JE2835AFR-N-0001A0000-N0000001?qs=tlsG%2FOw5FFhxeS5Ond46kw%3D%3D" x="58" y="52" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="50.29" y="63.06" size="1.27" layer="25" rot="R180" align="center"/>
+<attribute name="VALUE" x="50.02" y="65.32" size="1.27" layer="21" rot="R180" align="center"/>
+</element>
+<element name="LED34" library="Luxeon SunPlus 2835" library_urn="urn:adsk.wipprod:fs.file:vf.7Z4dwja_SPWNX9mvQVbR3A" package="L1SP-PNK1002800000" value="WHITE" x="63" y="60" smashed="yes" rot="R180">
+<attribute name="DESCRIPTION" value="High Power LEDs - Single Color 2835 Mid-Power ColorFar Red 720-740nm" x="71" y="52" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="mm" x="71" y="52" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="CREE LED" x="71" y="52" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="JE2835AFR-N-0001A0000-N0000001" x="71" y="52" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="941-JE2835AFRN01AN" x="71" y="52" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Cree-LED/JE2835AFR-N-0001A0000-N0000001?qs=tlsG%2FOw5FFhxeS5Ond46kw%3D%3D" x="71" y="52" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="63.29" y="63.06" size="1.27" layer="25" rot="R180" align="center"/>
+<attribute name="VALUE" x="63.02" y="65.32" size="1.27" layer="21" rot="R180" align="center"/>
+</element>
+<element name="LED35" library="Luxeon SunPlus 2835" library_urn="urn:adsk.wipprod:fs.file:vf.7Z4dwja_SPWNX9mvQVbR3A" package="L1SP-PNK1002800000" value="WHITE" x="76" y="60" smashed="yes" rot="R180">
+<attribute name="DESCRIPTION" value="High Power LEDs - Single Color 2835 Mid-Power ColorFar Red 720-740nm" x="84" y="52" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="mm" x="84" y="52" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="CREE LED" x="84" y="52" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="JE2835AFR-N-0001A0000-N0000001" x="84" y="52" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="941-JE2835AFRN01AN" x="84" y="52" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Cree-LED/JE2835AFR-N-0001A0000-N0000001?qs=tlsG%2FOw5FFhxeS5Ond46kw%3D%3D" x="84" y="52" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="76.29" y="63.06" size="1.27" layer="25" rot="R180" align="center"/>
+<attribute name="VALUE" x="76.02" y="65.32" size="1.27" layer="21" rot="R180" align="center"/>
+</element>
+<element name="LED36" library="Luxeon SunPlus 2835" library_urn="urn:adsk.wipprod:fs.file:vf.7Z4dwja_SPWNX9mvQVbR3A" package="L1SP-PNK1002800000" value="WHITE" x="89" y="60" smashed="yes" rot="R180">
+<attribute name="DESCRIPTION" value="High Power LEDs - Single Color 2835 Mid-Power ColorFar Red 720-740nm" x="97" y="52" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="mm" x="97" y="52" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="CREE LED" x="97" y="52" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="JE2835AFR-N-0001A0000-N0000001" x="97" y="52" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="941-JE2835AFRN01AN" x="97" y="52" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Cree-LED/JE2835AFR-N-0001A0000-N0000001?qs=tlsG%2FOw5FFhxeS5Ond46kw%3D%3D" x="97" y="52" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="89.29" y="63.06" size="1.27" layer="25" rot="R180" align="center"/>
+<attribute name="VALUE" x="89.02" y="65.32" size="1.27" layer="21" rot="R180" align="center"/>
+</element>
+<element name="LED37" library="Luxeon SunPlus 2835" library_urn="urn:adsk.wipprod:fs.file:vf.7Z4dwja_SPWNX9mvQVbR3A" package="L1SP-PNK1002800000" value="WHITE" x="24" y="50" smashed="yes" rot="R180">
+<attribute name="DESCRIPTION" value="High Power LEDs - Single Color 2835 Mid-Power ColorFar Red 720-740nm" x="32" y="42" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="mm" x="32" y="42" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="CREE LED" x="32" y="42" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="JE2835AFR-N-0001A0000-N0000001" x="32" y="42" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="941-JE2835AFRN01AN" x="32" y="42" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Cree-LED/JE2835AFR-N-0001A0000-N0000001?qs=tlsG%2FOw5FFhxeS5Ond46kw%3D%3D" x="32" y="42" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="24.29" y="53.06" size="1.27" layer="25" rot="R180" align="center"/>
+<attribute name="VALUE" x="24.02" y="55.32" size="1.27" layer="21" rot="R180" align="center"/>
+</element>
+<element name="LED38" library="Luxeon SunPlus 2835" library_urn="urn:adsk.wipprod:fs.file:vf.7Z4dwja_SPWNX9mvQVbR3A" package="L1SP-PNK1002800000" value="WHITE" x="37" y="50" smashed="yes" rot="R180">
+<attribute name="DESCRIPTION" value="High Power LEDs - Single Color 2835 Mid-Power ColorFar Red 720-740nm" x="45" y="42" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="mm" x="45" y="42" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="CREE LED" x="45" y="42" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="JE2835AFR-N-0001A0000-N0000001" x="45" y="42" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="941-JE2835AFRN01AN" x="45" y="42" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Cree-LED/JE2835AFR-N-0001A0000-N0000001?qs=tlsG%2FOw5FFhxeS5Ond46kw%3D%3D" x="45" y="42" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="37.29" y="53.06" size="1.27" layer="25" rot="R180" align="center"/>
+<attribute name="VALUE" x="37.02" y="55.32" size="1.27" layer="21" rot="R180" align="center"/>
+</element>
+<element name="LED39" library="Luxeon SunPlus 2835" library_urn="urn:adsk.wipprod:fs.file:vf.7Z4dwja_SPWNX9mvQVbR3A" package="L1SP-PNK1002800000" value="WHITE" x="50" y="50" smashed="yes" rot="R180">
+<attribute name="DESCRIPTION" value="High Power LEDs - Single Color 2835 Mid-Power ColorFar Red 720-740nm" x="58" y="42" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="mm" x="58" y="42" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="CREE LED" x="58" y="42" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="JE2835AFR-N-0001A0000-N0000001" x="58" y="42" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="941-JE2835AFRN01AN" x="58" y="42" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Cree-LED/JE2835AFR-N-0001A0000-N0000001?qs=tlsG%2FOw5FFhxeS5Ond46kw%3D%3D" x="58" y="42" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="50.29" y="53.06" size="1.27" layer="25" rot="R180" align="center"/>
+<attribute name="VALUE" x="50.02" y="55.32" size="1.27" layer="21" rot="R180" align="center"/>
+</element>
+<element name="LED40" library="Luxeon SunPlus 2835" library_urn="urn:adsk.wipprod:fs.file:vf.7Z4dwja_SPWNX9mvQVbR3A" package="L1SP-PNK1002800000" value="WHITE" x="63" y="50" smashed="yes" rot="R180">
+<attribute name="DESCRIPTION" value="High Power LEDs - Single Color 2835 Mid-Power ColorFar Red 720-740nm" x="71" y="42" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="mm" x="71" y="42" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="CREE LED" x="71" y="42" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="JE2835AFR-N-0001A0000-N0000001" x="71" y="42" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="941-JE2835AFRN01AN" x="71" y="42" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Cree-LED/JE2835AFR-N-0001A0000-N0000001?qs=tlsG%2FOw5FFhxeS5Ond46kw%3D%3D" x="71" y="42" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="63.29" y="53.06" size="1.27" layer="25" rot="R180" align="center"/>
+<attribute name="VALUE" x="63.02" y="55.32" size="1.27" layer="21" rot="R180" align="center"/>
+</element>
+<element name="LED41" library="Luxeon SunPlus 2835" library_urn="urn:adsk.wipprod:fs.file:vf.7Z4dwja_SPWNX9mvQVbR3A" package="L1SP-PNK1002800000" value="WHITE" x="76" y="50" smashed="yes" rot="R180">
+<attribute name="DESCRIPTION" value="High Power LEDs - Single Color 2835 Mid-Power ColorFar Red 720-740nm" x="84" y="42" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="mm" x="84" y="42" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="CREE LED" x="84" y="42" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="JE2835AFR-N-0001A0000-N0000001" x="84" y="42" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="941-JE2835AFRN01AN" x="84" y="42" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Cree-LED/JE2835AFR-N-0001A0000-N0000001?qs=tlsG%2FOw5FFhxeS5Ond46kw%3D%3D" x="84" y="42" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="76.29" y="53.06" size="1.27" layer="25" rot="R180" align="center"/>
+<attribute name="VALUE" x="76.02" y="55.32" size="1.27" layer="21" rot="R180" align="center"/>
+</element>
+<element name="LED42" library="Luxeon SunPlus 2835" library_urn="urn:adsk.wipprod:fs.file:vf.7Z4dwja_SPWNX9mvQVbR3A" package="L1SP-PNK1002800000" value="WHITE" x="89" y="50" smashed="yes" rot="R180">
+<attribute name="DESCRIPTION" value="High Power LEDs - Single Color 2835 Mid-Power ColorFar Red 720-740nm" x="97" y="42" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="mm" x="97" y="42" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="CREE LED" x="97" y="42" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="JE2835AFR-N-0001A0000-N0000001" x="97" y="42" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="941-JE2835AFRN01AN" x="97" y="42" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Cree-LED/JE2835AFR-N-0001A0000-N0000001?qs=tlsG%2FOw5FFhxeS5Ond46kw%3D%3D" x="97" y="42" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="89.29" y="53.06" size="1.27" layer="25" rot="R180" align="center"/>
+<attribute name="VALUE" x="89.02" y="55.32" size="1.27" layer="21" rot="R180" align="center"/>
+</element>
+<element name="LED43" library="Luxeon SunPlus 2835" library_urn="urn:adsk.wipprod:fs.file:vf.7Z4dwja_SPWNX9mvQVbR3A" package="L1SP-PNK1002800000" value="WHITE" x="24" y="30" smashed="yes" rot="R180">
+<attribute name="DESCRIPTION" value="High Power LEDs - Single Color 2835 Mid-Power ColorFar Red 720-740nm" x="32" y="22" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="mm" x="32" y="22" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="CREE LED" x="32" y="22" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="JE2835AFR-N-0001A0000-N0000001" x="32" y="22" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="941-JE2835AFRN01AN" x="32" y="22" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Cree-LED/JE2835AFR-N-0001A0000-N0000001?qs=tlsG%2FOw5FFhxeS5Ond46kw%3D%3D" x="32" y="22" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="24.29" y="33.06" size="1.27" layer="25" rot="R180" align="center"/>
+<attribute name="VALUE" x="24.02" y="35.32" size="1.27" layer="21" rot="R180" align="center"/>
+</element>
+<element name="LED44" library="Luxeon SunPlus 2835" library_urn="urn:adsk.wipprod:fs.file:vf.7Z4dwja_SPWNX9mvQVbR3A" package="L1SP-PNK1002800000" value="WHITE" x="37" y="30" smashed="yes" rot="R180">
+<attribute name="DESCRIPTION" value="High Power LEDs - Single Color 2835 Mid-Power ColorFar Red 720-740nm" x="45" y="22" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="mm" x="45" y="22" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="CREE LED" x="45" y="22" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="JE2835AFR-N-0001A0000-N0000001" x="45" y="22" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="941-JE2835AFRN01AN" x="45" y="22" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Cree-LED/JE2835AFR-N-0001A0000-N0000001?qs=tlsG%2FOw5FFhxeS5Ond46kw%3D%3D" x="45" y="22" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="37.29" y="33.06" size="1.27" layer="25" rot="R180" align="center"/>
+<attribute name="VALUE" x="37.02" y="35.32" size="1.27" layer="21" rot="R180" align="center"/>
+</element>
+<element name="LED45" library="Luxeon SunPlus 2835" library_urn="urn:adsk.wipprod:fs.file:vf.7Z4dwja_SPWNX9mvQVbR3A" package="L1SP-PNK1002800000" value="WHITE" x="50" y="30" smashed="yes" rot="R180">
+<attribute name="DESCRIPTION" value="High Power LEDs - Single Color 2835 Mid-Power ColorFar Red 720-740nm" x="58" y="22" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="mm" x="58" y="22" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="CREE LED" x="58" y="22" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="JE2835AFR-N-0001A0000-N0000001" x="58" y="22" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="941-JE2835AFRN01AN" x="58" y="22" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Cree-LED/JE2835AFR-N-0001A0000-N0000001?qs=tlsG%2FOw5FFhxeS5Ond46kw%3D%3D" x="58" y="22" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="50.29" y="33.06" size="1.27" layer="25" rot="R180" align="center"/>
+<attribute name="VALUE" x="50.02" y="35.32" size="1.27" layer="21" rot="R180" align="center"/>
+</element>
+<element name="LED46" library="Luxeon SunPlus 2835" library_urn="urn:adsk.wipprod:fs.file:vf.7Z4dwja_SPWNX9mvQVbR3A" package="L1SP-PNK1002800000" value="WHITE" x="63" y="30" smashed="yes" rot="R180">
+<attribute name="DESCRIPTION" value="High Power LEDs - Single Color 2835 Mid-Power ColorFar Red 720-740nm" x="71" y="22" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="mm" x="71" y="22" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="CREE LED" x="71" y="22" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="JE2835AFR-N-0001A0000-N0000001" x="71" y="22" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="941-JE2835AFRN01AN" x="71" y="22" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Cree-LED/JE2835AFR-N-0001A0000-N0000001?qs=tlsG%2FOw5FFhxeS5Ond46kw%3D%3D" x="71" y="22" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="63.29" y="33.06" size="1.27" layer="25" rot="R180" align="center"/>
+<attribute name="VALUE" x="63.02" y="35.32" size="1.27" layer="21" rot="R180" align="center"/>
+</element>
+<element name="LED47" library="Luxeon SunPlus 2835" library_urn="urn:adsk.wipprod:fs.file:vf.7Z4dwja_SPWNX9mvQVbR3A" package="L1SP-PNK1002800000" value="WHITE" x="76" y="30" smashed="yes" rot="R180">
+<attribute name="DESCRIPTION" value="High Power LEDs - Single Color 2835 Mid-Power ColorFar Red 720-740nm" x="84" y="22" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="mm" x="84" y="22" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="CREE LED" x="84" y="22" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="JE2835AFR-N-0001A0000-N0000001" x="84" y="22" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="941-JE2835AFRN01AN" x="84" y="22" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Cree-LED/JE2835AFR-N-0001A0000-N0000001?qs=tlsG%2FOw5FFhxeS5Ond46kw%3D%3D" x="84" y="22" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="76.29" y="33.06" size="1.27" layer="25" rot="R180" align="center"/>
+<attribute name="VALUE" x="76.02" y="35.32" size="1.27" layer="21" rot="R180" align="center"/>
+</element>
+<element name="LED48" library="Luxeon SunPlus 2835" library_urn="urn:adsk.wipprod:fs.file:vf.7Z4dwja_SPWNX9mvQVbR3A" package="L1SP-PNK1002800000" value="WHITE" x="89" y="30" smashed="yes" rot="R180">
+<attribute name="DESCRIPTION" value="High Power LEDs - Single Color 2835 Mid-Power ColorFar Red 720-740nm" x="97" y="22" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="mm" x="97" y="22" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="CREE LED" x="97" y="22" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="JE2835AFR-N-0001A0000-N0000001" x="97" y="22" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="941-JE2835AFRN01AN" x="97" y="22" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Cree-LED/JE2835AFR-N-0001A0000-N0000001?qs=tlsG%2FOw5FFhxeS5Ond46kw%3D%3D" x="97" y="22" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="89.29" y="33.06" size="1.27" layer="25" rot="R180" align="center"/>
+<attribute name="VALUE" x="89.02" y="35.32" size="1.27" layer="21" rot="R180" align="center"/>
+</element>
+<element name="LED49" library="Luxeon SunPlus 2835" library_urn="urn:adsk.wipprod:fs.file:vf.7Z4dwja_SPWNX9mvQVbR3A" package="L1SP-PNK1002800000" value="WHITE" x="24" y="20" smashed="yes" rot="R180">
+<attribute name="DESCRIPTION" value="High Power LEDs - Single Color 2835 Mid-Power ColorFar Red 720-740nm" x="32" y="12" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="mm" x="32" y="12" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="CREE LED" x="32" y="12" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="JE2835AFR-N-0001A0000-N0000001" x="32" y="12" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="941-JE2835AFRN01AN" x="32" y="12" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Cree-LED/JE2835AFR-N-0001A0000-N0000001?qs=tlsG%2FOw5FFhxeS5Ond46kw%3D%3D" x="32" y="12" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="24.29" y="23.06" size="1.27" layer="25" rot="R180" align="center"/>
+<attribute name="VALUE" x="24.02" y="25.32" size="1.27" layer="21" rot="R180" align="center"/>
+</element>
+<element name="LED50" library="Luxeon SunPlus 2835" library_urn="urn:adsk.wipprod:fs.file:vf.7Z4dwja_SPWNX9mvQVbR3A" package="L1SP-PNK1002800000" value="WHITE" x="37" y="20" smashed="yes" rot="R180">
+<attribute name="DESCRIPTION" value="High Power LEDs - Single Color 2835 Mid-Power ColorFar Red 720-740nm" x="45" y="12" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="mm" x="45" y="12" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="CREE LED" x="45" y="12" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="JE2835AFR-N-0001A0000-N0000001" x="45" y="12" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="941-JE2835AFRN01AN" x="45" y="12" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Cree-LED/JE2835AFR-N-0001A0000-N0000001?qs=tlsG%2FOw5FFhxeS5Ond46kw%3D%3D" x="45" y="12" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="37.29" y="23.06" size="1.27" layer="25" rot="R180" align="center"/>
+<attribute name="VALUE" x="37.02" y="25.32" size="1.27" layer="21" rot="R180" align="center"/>
+</element>
+<element name="LED51" library="Luxeon SunPlus 2835" library_urn="urn:adsk.wipprod:fs.file:vf.7Z4dwja_SPWNX9mvQVbR3A" package="L1SP-PNK1002800000" value="WHITE" x="50" y="20" smashed="yes" rot="R180">
+<attribute name="DESCRIPTION" value="High Power LEDs - Single Color 2835 Mid-Power ColorFar Red 720-740nm" x="58" y="12" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="mm" x="58" y="12" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="CREE LED" x="58" y="12" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="JE2835AFR-N-0001A0000-N0000001" x="58" y="12" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="941-JE2835AFRN01AN" x="58" y="12" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Cree-LED/JE2835AFR-N-0001A0000-N0000001?qs=tlsG%2FOw5FFhxeS5Ond46kw%3D%3D" x="58" y="12" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="50.29" y="23.06" size="1.27" layer="25" rot="R180" align="center"/>
+<attribute name="VALUE" x="50.02" y="25.32" size="1.27" layer="21" rot="R180" align="center"/>
+</element>
+<element name="LED52" library="Luxeon SunPlus 2835" library_urn="urn:adsk.wipprod:fs.file:vf.7Z4dwja_SPWNX9mvQVbR3A" package="L1SP-PNK1002800000" value="WHITE" x="63" y="20" smashed="yes" rot="R180">
+<attribute name="DESCRIPTION" value="High Power LEDs - Single Color 2835 Mid-Power ColorFar Red 720-740nm" x="71" y="12" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="mm" x="71" y="12" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="CREE LED" x="71" y="12" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="JE2835AFR-N-0001A0000-N0000001" x="71" y="12" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="941-JE2835AFRN01AN" x="71" y="12" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Cree-LED/JE2835AFR-N-0001A0000-N0000001?qs=tlsG%2FOw5FFhxeS5Ond46kw%3D%3D" x="71" y="12" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="63.29" y="23.06" size="1.27" layer="25" rot="R180" align="center"/>
+<attribute name="VALUE" x="63.02" y="25.32" size="1.27" layer="21" rot="R180" align="center"/>
+</element>
+<element name="LED53" library="Luxeon SunPlus 2835" library_urn="urn:adsk.wipprod:fs.file:vf.7Z4dwja_SPWNX9mvQVbR3A" package="L1SP-PNK1002800000" value="WHITE" x="76" y="20" smashed="yes" rot="R180">
+<attribute name="DESCRIPTION" value="High Power LEDs - Single Color 2835 Mid-Power ColorFar Red 720-740nm" x="84" y="12" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="mm" x="84" y="12" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="CREE LED" x="84" y="12" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="JE2835AFR-N-0001A0000-N0000001" x="84" y="12" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="941-JE2835AFRN01AN" x="84" y="12" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Cree-LED/JE2835AFR-N-0001A0000-N0000001?qs=tlsG%2FOw5FFhxeS5Ond46kw%3D%3D" x="84" y="12" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="76.29" y="23.06" size="1.27" layer="25" rot="R180" align="center"/>
+<attribute name="VALUE" x="76.02" y="25.32" size="1.27" layer="21" rot="R180" align="center"/>
+</element>
+<element name="LED54" library="Luxeon SunPlus 2835" library_urn="urn:adsk.wipprod:fs.file:vf.7Z4dwja_SPWNX9mvQVbR3A" package="L1SP-PNK1002800000" value="WHITE" x="89" y="20" smashed="yes" rot="R180">
+<attribute name="DESCRIPTION" value="High Power LEDs - Single Color 2835 Mid-Power ColorFar Red 720-740nm" x="97" y="12" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="mm" x="97" y="12" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="CREE LED" x="97" y="12" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="JE2835AFR-N-0001A0000-N0000001" x="97" y="12" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="941-JE2835AFRN01AN" x="97" y="12" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Cree-LED/JE2835AFR-N-0001A0000-N0000001?qs=tlsG%2FOw5FFhxeS5Ond46kw%3D%3D" x="97" y="12" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="89.29" y="23.06" size="1.27" layer="25" rot="R180" align="center"/>
+<attribute name="VALUE" x="89.02" y="25.32" size="1.27" layer="21" rot="R180" align="center"/>
+</element>
+<element name="LED1" library="Luxeon SunPlus 2835" library_urn="urn:adsk.wipprod:fs.file:vf.7Z4dwja_SPWNX9mvQVbR3A" package="L1SP-PNK1002800000" value="BLUE" x="24" y="40" smashed="yes" rot="R180">
+<attribute name="DESCRIPTION" value="High Power LEDs - Single Color 2835 Mid-Power ColorFar Red 720-740nm" x="31" y="31" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="mm" x="31" y="31" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="CREE LED" x="31" y="31" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="JE2835AFR-N-0001A0000-N0000001" x="31" y="31" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="941-JE2835AFRN01AN" x="31" y="31" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Cree-LED/JE2835AFR-N-0001A0000-N0000001?qs=tlsG%2FOw5FFhxeS5Ond46kw%3D%3D" x="31" y="31" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="24.29" y="43.06" size="1.27" layer="25" rot="R180" align="center"/>
+<attribute name="VALUE" x="24.02" y="45.32" size="1.27" layer="21" rot="R180" align="center"/>
+</element>
+<element name="LED7" library="Luxeon SunPlus 2835" library_urn="urn:adsk.wipprod:fs.file:vf.7Z4dwja_SPWNX9mvQVbR3A" package="L1SP-PNK1002800000" value="RED" x="24" y="70" smashed="yes" rot="R180">
+<attribute name="DESCRIPTION" value="High Power LEDs - Single Color 2835 Mid-Power ColorFar Red 720-740nm" x="31" y="62" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="mm" x="31" y="62" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="CREE LED" x="31" y="62" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="JE2835AFR-N-0001A0000-N0000001" x="31" y="62" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="941-JE2835AFRN01AN" x="31" y="62" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Cree-LED/JE2835AFR-N-0001A0000-N0000001?qs=tlsG%2FOw5FFhxeS5Ond46kw%3D%3D" x="31" y="62" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="24.29" y="73.06" size="1.27" layer="25" rot="R180" align="center"/>
+<attribute name="VALUE" x="24.02" y="75.32" size="1.27" layer="21" rot="R180" align="center"/>
+</element>
+<element name="LED13" library="Luxeon SunPlus 2835" library_urn="urn:adsk.wipprod:fs.file:vf.7Z4dwja_SPWNX9mvQVbR3A" package="L1SP-PNK1002800000" value="FR" x="24" y="10" smashed="yes" rot="R180">
+<attribute name="DESCRIPTION" value="High Power LEDs - Single Color 2835 Mid-Power ColorFar Red 720-740nm" x="32" y="2" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="mm" x="32" y="2" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="CREE LED" x="32" y="2" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="JE2835AFR-N-0001A0000-N0000001" x="32" y="2" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="941-JE2835AFRN01AN" x="32" y="2" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Cree-LED/JE2835AFR-N-0001A0000-N0000001?qs=tlsG%2FOw5FFhxeS5Ond46kw%3D%3D" x="32" y="2" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="24.29" y="13.06" size="1.27" layer="25" rot="R180" align="center"/>
+<attribute name="VALUE" x="24.02" y="15.32" size="1.27" layer="21" rot="R180" align="center"/>
+</element>
+<element name="LED19" library="Luxeon SunPlus 2835" library_urn="urn:adsk.wipprod:fs.file:vf.7Z4dwja_SPWNX9mvQVbR3A" package="L1SP-PNK1002800000" value="WHITE" x="24" y="90" smashed="yes" rot="R180">
+<attribute name="DESCRIPTION" value="High Power LEDs - Single Color 2835 Mid-Power ColorFar Red 720-740nm" x="32" y="81" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="mm" x="32" y="81" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="CREE LED" x="32" y="81" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="JE2835AFR-N-0001A0000-N0000001" x="32" y="81" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="941-JE2835AFRN01AN" x="32" y="81" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Cree-LED/JE2835AFR-N-0001A0000-N0000001?qs=tlsG%2FOw5FFhxeS5Ond46kw%3D%3D" x="32" y="81" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="24.29" y="93.06" size="1.27" layer="25" rot="R180" align="center"/>
+<attribute name="VALUE" x="24.02" y="95.32" size="1.27" layer="21" rot="R180" align="center"/>
+</element>
+<element name="BLUE+" library="LibraryLEDs" library_urn="urn:adsk.wipprod:fs.file:vf.lVBJ_MekSmWXw5pmyBoq9Q" package="SOLDERPAD" package3d_urn="urn:adsk.eagle:package:30841/1" value="" x="11.25" y="44.75" smashed="yes" rot="R270">
+<attribute name="NAME" x="8.75" y="46.25" size="1.27" layer="25"/>
+<attribute name="POPULARITY" value="21" x="11.25" y="44.75" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="11.25" y="44.75" size="0.0254" layer="27" rot="R270"/>
+</element>
+<element name="BLUE-" library="LibraryLEDs" library_urn="urn:adsk.wipprod:fs.file:vf.lVBJ_MekSmWXw5pmyBoq9Q" package="SOLDERPAD" package3d_urn="urn:adsk.eagle:package:30841/1" value="" x="11.25" y="35.5" smashed="yes" rot="R270">
+<attribute name="NAME" x="8.75" y="37" size="1.27" layer="25"/>
+<attribute name="POPULARITY" value="21" x="11.25" y="35.5" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="11.25" y="35.5" size="0.0254" layer="27" rot="R270"/>
+</element>
+<element name="RED+" library="LibraryLEDs" library_urn="urn:adsk.wipprod:fs.file:vf.lVBJ_MekSmWXw5pmyBoq9Q" package="SOLDERPAD" package3d_urn="urn:adsk.eagle:package:30841/1" value="" x="11.25" y="64.25" smashed="yes" rot="R270">
+<attribute name="NAME" x="8.75" y="65.75" size="1.27" layer="25"/>
+<attribute name="POPULARITY" value="21" x="11.25" y="64.25" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="11.25" y="64.25" size="0.0254" layer="27" rot="R270"/>
+</element>
+<element name="RED-" library="LibraryLEDs" library_urn="urn:adsk.wipprod:fs.file:vf.lVBJ_MekSmWXw5pmyBoq9Q" package="SOLDERPAD" package3d_urn="urn:adsk.eagle:package:30841/1" value="" x="11.25" y="58" smashed="yes" rot="R270">
+<attribute name="NAME" x="8.75" y="59.5" size="1.27" layer="25"/>
+<attribute name="POPULARITY" value="21" x="11.25" y="58" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="11.25" y="58" size="0.0254" layer="27" rot="R270"/>
+</element>
+<element name="FR+" library="LibraryLEDs" library_urn="urn:adsk.wipprod:fs.file:vf.lVBJ_MekSmWXw5pmyBoq9Q" package="SOLDERPAD" package3d_urn="urn:adsk.eagle:package:30841/1" value="" x="11.25" y="24.75" smashed="yes" rot="R270">
+<attribute name="NAME" x="8.75" y="26.25" size="1.27" layer="25"/>
+<attribute name="POPULARITY" value="21" x="11.25" y="24.75" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="11.25" y="24.75" size="0.0254" layer="27" rot="R270"/>
+</element>
+<element name="FR-" library="LibraryLEDs" library_urn="urn:adsk.wipprod:fs.file:vf.lVBJ_MekSmWXw5pmyBoq9Q" package="SOLDERPAD" package3d_urn="urn:adsk.eagle:package:30841/1" value="" x="11.25" y="15.5" smashed="yes" rot="R270">
+<attribute name="NAME" x="8.75" y="17" size="1.27" layer="25"/>
+<attribute name="POPULARITY" value="21" x="11.25" y="15.5" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="11.25" y="15.5" size="0.0254" layer="27" rot="R270"/>
+</element>
+<element name="WHITE+" library="LibraryLEDs" library_urn="urn:adsk.wipprod:fs.file:vf.lVBJ_MekSmWXw5pmyBoq9Q" package="SOLDERPAD" package3d_urn="urn:adsk.eagle:package:30841/1" value="" x="11.25" y="84.25" smashed="yes" rot="R270">
+<attribute name="NAME" x="8.75" y="85.75" size="1.27" layer="25"/>
+<attribute name="POPULARITY" value="21" x="11.25" y="84.25" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="11.25" y="84.25" size="0.0254" layer="27" rot="R270"/>
+</element>
+<element name="WHITE-" library="LibraryLEDs" library_urn="urn:adsk.wipprod:fs.file:vf.lVBJ_MekSmWXw5pmyBoq9Q" package="SOLDERPAD" package3d_urn="urn:adsk.eagle:package:30841/1" value="" x="11.25" y="76" smashed="yes" rot="R270">
+<attribute name="NAME" x="8.75" y="77.5" size="1.27" layer="25"/>
+<attribute name="POPULARITY" value="21" x="11.25" y="76" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="11.25" y="76" size="0.0254" layer="27" rot="R270"/>
+</element>
+</elements>
+<signals>
+<signal name="N$1">
+<contactref element="LED7" pad="2"/>
+<wire x1="22.735" y1="70" x2="19.73" y2="70" width="1.016" layer="1"/>
+<contactref element="RED+" pad="1"/>
+<wire x1="19.73" y1="70" x2="15" y2="65.27" width="1.016" layer="1"/>
+<wire x1="15" y1="65.27" x2="15" y2="64" width="1.016" layer="1"/>
+<wire x1="15" y1="64" x2="11.5" y2="64" width="1.016" layer="1"/>
+<wire x1="11.5" y1="64" x2="11.25" y2="64.25" width="1.016" layer="1"/>
+</signal>
+<signal name="N$3">
+<contactref element="LED8" pad="2"/>
+<contactref element="LED7" pad="1"/>
+<wire x1="24.735" y1="70" x2="35.735" y2="70" width="1.016" layer="1"/>
+</signal>
+<signal name="N$9">
+<contactref element="LED13" pad="2"/>
+<wire x1="19" y1="18" x2="19" y2="12" width="1.016" layer="1"/>
+<wire x1="19" y1="12" x2="21" y2="10" width="1.016" layer="1"/>
+<wire x1="21" y1="10" x2="22.735" y2="10" width="1.016" layer="1"/>
+<contactref element="FR+" pad="1"/>
+<wire x1="19" y1="18" x2="12.25" y2="24.75" width="1.016" layer="1"/>
+<wire x1="12.25" y1="24.75" x2="11.25" y2="24.75" width="1.016" layer="1"/>
+</signal>
+<signal name="N$17">
+<contactref element="LED14" pad="2"/>
+<contactref element="LED13" pad="1"/>
+<wire x1="24.735" y1="10" x2="35.735" y2="10" width="1.016" layer="1"/>
+</signal>
+<signal name="N$35">
+<contactref element="LED1" pad="2"/>
+<wire x1="21" y1="40" x2="22.735" y2="40" width="1.016" layer="1"/>
+<contactref element="BLUE+" pad="1"/>
+<wire x1="21" y1="40" x2="16.25" y2="44.75" width="1.016" layer="1"/>
+<wire x1="16.25" y1="44.75" x2="11.25" y2="44.75" width="1.016" layer="1"/>
+</signal>
+<signal name="N$36">
+<contactref element="LED2" pad="2"/>
+<contactref element="LED1" pad="1"/>
+<wire x1="24.735" y1="40" x2="35.735" y2="40" width="1.016" layer="1"/>
+</signal>
+<signal name="N$12">
+<contactref element="LED20" pad="2"/>
+<contactref element="LED19" pad="1"/>
+<wire x1="24.735" y1="90" x2="35.835" y2="90" width="1.016" layer="1"/>
+</signal>
+<signal name="N$10">
+<contactref element="LED25" pad="2"/>
+<contactref element="LED31" pad="2"/>
+<contactref element="LED43" pad="2"/>
+<contactref element="LED49" pad="2"/>
+<contactref element="LED37" pad="2"/>
+<contactref element="LED19" pad="2"/>
+<wire x1="22.735" y1="90" x2="19.73" y2="90" width="1.016" layer="1"/>
+<wire x1="21" y1="80" x2="22.735" y2="80" width="1.016" layer="1"/>
+<wire x1="18.5" y1="53.5" x2="22" y2="50" width="1.016" layer="1"/>
+<wire x1="22" y1="50" x2="22.735" y2="50" width="1.016" layer="1"/>
+<wire x1="20.5" y1="30" x2="22.735" y2="30" width="1.016" layer="1"/>
+<wire x1="19.5" y1="31" x2="20.5" y2="30" width="1.016" layer="1"/>
+<wire x1="10" y1="31" x2="19.5" y2="31" width="1.016" layer="1"/>
+<wire x1="22.735" y1="20" x2="21" y2="20" width="1.016" layer="1"/>
+<contactref element="WHITE+" pad="1"/>
+<wire x1="22.735" y1="60" x2="21.5" y2="60" width="1.016" layer="1"/>
+<wire x1="19.9904" y1="25.29354375" x2="16.60354375" y2="28.6804" width="1.016" layer="1"/>
+<wire x1="16.60354375" y1="28.6804" x2="12.3196" y2="28.6804" width="1.016" layer="1"/>
+<wire x1="12.3196" y1="28.6804" x2="10" y2="31" width="1.016" layer="1"/>
+<wire x1="21" y1="20" x2="19.9904" y2="21.0096" width="1.016" layer="1"/>
+<wire x1="19.9904" y1="21.0096" x2="19.9904" y2="25.29354375" width="1.016" layer="1"/>
+<wire x1="6.46605625" y1="31" x2="10" y2="31" width="1.016" layer="1"/>
+<wire x1="3" y1="34.46605625" x2="6.46605625" y2="31" width="1.016" layer="1"/>
+<wire x1="11.25" y1="84.25" x2="16.25" y2="84.25" width="1.016" layer="1"/>
+<wire x1="16.25" y1="84.25" x2="16.75" y2="84.25" width="1.016" layer="1"/>
+<wire x1="16.75" y1="84.25" x2="21" y2="80" width="1.016" layer="1"/>
+<wire x1="19.73" y1="90" x2="18" y2="88.27" width="1.016" layer="1"/>
+<wire x1="18" y1="88.27" x2="18" y2="86" width="1.016" layer="1"/>
+<wire x1="18" y1="86" x2="16.25" y2="84.25" width="1.016" layer="1"/>
+<wire x1="11.25" y1="84.25" x2="4.25" y2="84.25" width="2.54" layer="1"/>
+<wire x1="4.25" y1="84.25" x2="3" y2="83" width="2.54" layer="1"/>
+<wire x1="3" y1="83" x2="3" y2="55.9" width="2.54" layer="1"/>
+<wire x1="3" y1="55.9" x2="3" y2="54.8" width="2.54" layer="1"/>
+<wire x1="3" y1="54.8" x2="3" y2="50" width="2.54" layer="1"/>
+<wire x1="6.5" y1="53.5" x2="6" y2="53" width="1.016" layer="1"/>
+<wire x1="6.5" y1="53.5" x2="15" y2="53.5" width="1.016" layer="1"/>
+<wire x1="15" y1="53.5" x2="16" y2="53.5" width="1.016" layer="1"/>
+<wire x1="16" y1="53.5" x2="17" y2="53.5" width="1.016" layer="1"/>
+<wire x1="17" y1="53.5" x2="18" y2="53.5" width="1.016" layer="1"/>
+<wire x1="18" y1="53.5" x2="18.5" y2="53.5" width="1.016" layer="1"/>
+<wire x1="3" y1="50" x2="3" y2="34.46605625" width="1.016" layer="1"/>
+<wire x1="21.5" y1="60" x2="18.25" y2="56.75" width="1.016" layer="1"/>
+<wire x1="17" y1="55.5" x2="16.25" y2="54.75" width="1.016" layer="1"/>
+<wire x1="16.25" y1="54.75" x2="15" y2="53.5" width="1.016" layer="1"/>
+<wire x1="18.25" y1="56.75" x2="18.25" y2="53.75" width="1.016" layer="1"/>
+<wire x1="18.25" y1="53.75" x2="18.5" y2="53.5" width="1.016" layer="1"/>
+<wire x1="17" y1="53.5" x2="17" y2="55.5" width="1.016" layer="1"/>
+<wire x1="17" y1="55.5" x2="17.25" y2="55.75" width="1.016" layer="1"/>
+<wire x1="17.25" y1="55.75" x2="18.25" y2="56.75" width="1.016" layer="1"/>
+<wire x1="18" y1="53.5" x2="18" y2="55" width="1.016" layer="1"/>
+<wire x1="18" y1="55" x2="17.25" y2="55.75" width="1.016" layer="1"/>
+<wire x1="16" y1="53.5" x2="16.25" y2="53.75" width="1.016" layer="1"/>
+<wire x1="16.25" y1="53.75" x2="16.25" y2="54.75" width="1.016" layer="1"/>
+<wire x1="6" y1="53" x2="3" y2="50" width="2.54" layer="1"/>
+<wire x1="6" y1="53" x2="5.9" y2="53" width="2.54" layer="1"/>
+<wire x1="5.9" y1="53" x2="3" y2="55.9" width="2.54" layer="1"/>
+</signal>
+<signal name="N$37">
+<contactref element="LED2" pad="1"/>
+<contactref element="LED3" pad="2"/>
+<wire x1="37.735" y1="40" x2="48.735" y2="40" width="1.016" layer="1"/>
+</signal>
+<signal name="N$38">
+<contactref element="LED3" pad="1"/>
+<contactref element="LED4" pad="2"/>
+<wire x1="50.735" y1="40" x2="61.735" y2="40" width="1.016" layer="1"/>
+</signal>
+<signal name="N$39">
+<contactref element="LED4" pad="1"/>
+<contactref element="LED5" pad="2"/>
+<wire x1="63.735" y1="40" x2="74.735" y2="40" width="1.016" layer="1"/>
+</signal>
+<signal name="N$40">
+<contactref element="LED5" pad="1"/>
+<contactref element="LED6" pad="2"/>
+<wire x1="76.735" y1="40" x2="87.735" y2="40" width="1.016" layer="1"/>
+</signal>
+<signal name="N$4">
+<contactref element="LED8" pad="1"/>
+<contactref element="LED9" pad="2"/>
+<wire x1="37.735" y1="70" x2="48.735" y2="70" width="1.016" layer="1"/>
+</signal>
+<signal name="N$5">
+<contactref element="LED9" pad="1"/>
+<contactref element="LED10" pad="2"/>
+<wire x1="50.735" y1="70" x2="61.735" y2="70" width="1.016" layer="1"/>
+</signal>
+<signal name="N$6">
+<contactref element="LED10" pad="1"/>
+<contactref element="LED11" pad="2"/>
+<wire x1="63.735" y1="70" x2="74.735" y2="70" width="1.016" layer="1"/>
+</signal>
+<signal name="N$7">
+<contactref element="LED11" pad="1"/>
+<contactref element="LED12" pad="2"/>
+<wire x1="76.735" y1="70" x2="87.735" y2="70" width="1.016" layer="1"/>
+</signal>
+<signal name="N$18">
+<contactref element="LED14" pad="1"/>
+<contactref element="LED15" pad="2"/>
+<wire x1="37.735" y1="10" x2="48.735" y2="10" width="1.016" layer="1"/>
+</signal>
+<signal name="N$19">
+<contactref element="LED15" pad="1"/>
+<contactref element="LED16" pad="2"/>
+<wire x1="50.735" y1="10" x2="61.735" y2="10" width="1.016" layer="1"/>
+</signal>
+<signal name="N$20">
+<contactref element="LED16" pad="1"/>
+<contactref element="LED17" pad="2"/>
+<wire x1="63.735" y1="10" x2="74.735" y2="10" width="1.016" layer="1"/>
+</signal>
+<signal name="N$21">
+<contactref element="LED17" pad="1"/>
+<contactref element="LED18" pad="2"/>
+<wire x1="76.735" y1="10" x2="87.735" y2="10" width="1.016" layer="1"/>
+</signal>
+<signal name="N$14">
+<contactref element="LED20" pad="1"/>
+<contactref element="LED21" pad="2"/>
+<wire x1="37.835" y1="90" x2="48.735" y2="90" width="1.016" layer="1"/>
+</signal>
+<signal name="N$15">
+<contactref element="LED21" pad="1"/>
+<contactref element="LED22" pad="2"/>
+<wire x1="50.735" y1="90" x2="61.735" y2="90" width="1.016" layer="1"/>
+</signal>
+<signal name="N$16">
+<contactref element="LED22" pad="1"/>
+<contactref element="LED23" pad="2"/>
+<wire x1="63.735" y1="90" x2="74.735" y2="90" width="1.016" layer="1"/>
+</signal>
+<signal name="N$22">
+<contactref element="LED23" pad="1"/>
+<contactref element="LED24" pad="2"/>
+<wire x1="76.735" y1="90" x2="87.735" y2="90" width="1.016" layer="1"/>
+</signal>
+<signal name="N$24">
+<contactref element="LED25" pad="1"/>
+<contactref element="LED26" pad="2"/>
+<wire x1="35.735" y1="80" x2="24.735" y2="80" width="1.016" layer="1"/>
+</signal>
+<signal name="N$25">
+<contactref element="LED26" pad="1"/>
+<contactref element="LED27" pad="2"/>
+<wire x1="48.735" y1="80" x2="37.735" y2="80" width="1.016" layer="1"/>
+</signal>
+<signal name="N$26">
+<contactref element="LED27" pad="1"/>
+<contactref element="LED28" pad="2"/>
+<wire x1="61.735" y1="80" x2="50.735" y2="80" width="1.016" layer="1"/>
+</signal>
+<signal name="N$31">
+<contactref element="LED31" pad="1"/>
+<contactref element="LED32" pad="2"/>
+<wire x1="24.735" y1="60" x2="35.735" y2="60" width="1.016" layer="1"/>
+</signal>
+<signal name="N$33">
+<contactref element="LED32" pad="1"/>
+<contactref element="LED33" pad="2"/>
+<wire x1="37.735" y1="60" x2="48.735" y2="60" width="1.016" layer="1"/>
+</signal>
+<signal name="N$41">
+<contactref element="LED33" pad="1"/>
+<contactref element="LED34" pad="2"/>
+<wire x1="50.735" y1="60" x2="61.735" y2="60" width="1.016" layer="1"/>
+</signal>
+<signal name="N$42">
+<contactref element="LED34" pad="1"/>
+<contactref element="LED35" pad="2"/>
+<wire x1="63.735" y1="60" x2="74.735" y2="60" width="1.016" layer="1"/>
+</signal>
+<signal name="N$43">
+<contactref element="LED35" pad="1"/>
+<contactref element="LED36" pad="2"/>
+<wire x1="76.735" y1="60" x2="87.735" y2="60" width="1.016" layer="1"/>
+</signal>
+<signal name="N$45">
+<contactref element="LED37" pad="1"/>
+<contactref element="LED38" pad="2"/>
+<wire x1="35.735" y1="50" x2="24.735" y2="50" width="1.016" layer="1"/>
+</signal>
+<signal name="N$46">
+<contactref element="LED38" pad="1"/>
+<contactref element="LED39" pad="2"/>
+<wire x1="48.735" y1="50" x2="37.735" y2="50" width="1.016" layer="1"/>
+</signal>
+<signal name="N$51">
+<contactref element="LED43" pad="1"/>
+<contactref element="LED44" pad="2"/>
+<wire x1="24.735" y1="30" x2="35.735" y2="30" width="1.016" layer="1"/>
+</signal>
+<signal name="N$53">
+<contactref element="LED44" pad="1"/>
+<contactref element="LED45" pad="2"/>
+<wire x1="37.735" y1="30" x2="48.735" y2="30" width="1.016" layer="1"/>
+</signal>
+<signal name="N$54">
+<contactref element="LED45" pad="1"/>
+<contactref element="LED46" pad="2"/>
+<wire x1="50.735" y1="30" x2="61.735" y2="30" width="1.016" layer="1"/>
+</signal>
+<signal name="N$55">
+<contactref element="LED46" pad="1"/>
+<contactref element="LED47" pad="2"/>
+<wire x1="63.735" y1="30" x2="74.735" y2="30" width="1.016" layer="1"/>
+</signal>
+<signal name="N$56">
+<contactref element="LED47" pad="1"/>
+<contactref element="LED48" pad="2"/>
+<wire x1="76.735" y1="30" x2="87.735" y2="30" width="1.016" layer="1"/>
+</signal>
+<signal name="N$58">
+<contactref element="LED49" pad="1"/>
+<contactref element="LED50" pad="2"/>
+<wire x1="35.735" y1="20" x2="24.735" y2="20" width="1.016" layer="1"/>
+</signal>
+<signal name="N$59">
+<contactref element="LED50" pad="1"/>
+<contactref element="LED51" pad="2"/>
+<wire x1="48.735" y1="20" x2="37.735" y2="20" width="1.016" layer="1"/>
+</signal>
+<signal name="N$2">
+<contactref element="LED28" pad="1"/>
+<contactref element="LED29" pad="2"/>
+<wire x1="74.735" y1="80" x2="63.735" y2="80" width="1.016" layer="1"/>
+</signal>
+<signal name="N$13">
+<contactref element="LED29" pad="1"/>
+<contactref element="LED30" pad="2"/>
+<wire x1="87.735" y1="80" x2="76.735" y2="80" width="1.016" layer="1"/>
+</signal>
+<signal name="N$47">
+<contactref element="LED40" pad="2"/>
+<contactref element="LED39" pad="1"/>
+<wire x1="61.735" y1="50" x2="50.735" y2="50" width="1.016" layer="1"/>
+</signal>
+<signal name="N$48">
+<contactref element="LED41" pad="2"/>
+<contactref element="LED40" pad="1"/>
+<wire x1="74.735" y1="50" x2="63.735" y2="50" width="1.016" layer="1"/>
+</signal>
+<signal name="N$49">
+<contactref element="LED42" pad="2"/>
+<contactref element="LED41" pad="1"/>
+<wire x1="87.735" y1="50" x2="76.735" y2="50" width="1.016" layer="1"/>
+</signal>
+<signal name="N$60">
+<contactref element="LED52" pad="2"/>
+<contactref element="LED51" pad="1"/>
+<wire x1="61.735" y1="20" x2="50.735" y2="20" width="1.016" layer="1"/>
+</signal>
+<signal name="N$61">
+<contactref element="LED53" pad="2"/>
+<contactref element="LED52" pad="1"/>
+<wire x1="74.735" y1="20" x2="63.735" y2="20" width="1.016" layer="1"/>
+</signal>
+<signal name="N$62">
+<contactref element="LED54" pad="2"/>
+<contactref element="LED53" pad="1"/>
+<wire x1="87.735" y1="20" x2="76.735" y2="20" width="1.016" layer="1"/>
+</signal>
+<signal name="THERMAL">
+<polygon width="0.1524" layer="16" spacing="1.27" pour="solid" thermals="yes">
+<vertex x="0.0762" y="0.0762"/>
+<vertex x="99.9238" y="0.0762"/>
+<vertex x="99.9238" y="99.9238"/>
+<vertex x="0.0762" y="99.9238"/>
+</polygon>
+<via x="22.5" y="92.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="23.5" y="92.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="24.5" y="92.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="25.5" y="92.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="22" y="91.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="23" y="91.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="24" y="91.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="25" y="91.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="26" y="91.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="22" y="88.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="23" y="88.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="24" y="88.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="25" y="88.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="26" y="88.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="22.5" y="87.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="23.5" y="87.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="24.5" y="87.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="25.5" y="87.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="22" y="78.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="23" y="78.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="24" y="78.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="25" y="78.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="26" y="78.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="22.5" y="77.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="23.5" y="77.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="24.5" y="77.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="25.5" y="77.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="35.5" y="82.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="36.5" y="82.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="37.5" y="82.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="38.5" y="82.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="35" y="81.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="36" y="81.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="37" y="81.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="38" y="81.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="39" y="81.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="35" y="78.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="36" y="78.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="37" y="78.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="38" y="78.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="39" y="78.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="35.5" y="77.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="36.5" y="77.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="37.5" y="77.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="38.5" y="77.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="48.5" y="82.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="49.5" y="82.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="50.5" y="82.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="51.5" y="82.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="48" y="81.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="49" y="81.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="50" y="81.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="51" y="81.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="52" y="81.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="48" y="78.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="49" y="78.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="50" y="78.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="51" y="78.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="52" y="78.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="48.5" y="77.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="49.5" y="77.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="50.5" y="77.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="51.5" y="77.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="61.5" y="82.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="62.5" y="82.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="63.5" y="82.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="64.5" y="82.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="61" y="81.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="62" y="81.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="63" y="81.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="64" y="81.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="65" y="81.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="61" y="78.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="62" y="78.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="63" y="78.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="64" y="78.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="65" y="78.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="61.5" y="77.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="62.5" y="77.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="63.5" y="77.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="64.5" y="77.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="48.4" y="92.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="49.4" y="92.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="50.4" y="92.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="51.4" y="92.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="47.9" y="91.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="48.9" y="91.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="49.9" y="91.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="50.9" y="91.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="51.9" y="91.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="47.9" y="88.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="48.9" y="88.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="49.9" y="88.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="50.9" y="88.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="51.9" y="88.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="48.4" y="87.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="49.4" y="87.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="50.4" y="87.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="51.4" y="87.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="35.6" y="92.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="36.6" y="92.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="37.6" y="92.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="38.6" y="92.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="35.1" y="91.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="36.1" y="91.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="37.1" y="91.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="38.1" y="91.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="39.1" y="91.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="35.1" y="88.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="36.1" y="88.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="37.1" y="88.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="38.1" y="88.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="39.1" y="88.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="35.6" y="87.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="36.6" y="87.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="37.6" y="87.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="38.6" y="87.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="74.5" y="82.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="75.5" y="82.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="76.5" y="82.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="77.5" y="82.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="74" y="81.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="75" y="81.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="76" y="81.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="77" y="81.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="78" y="81.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="74" y="78.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="75" y="78.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="76" y="78.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="77" y="78.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="78" y="78.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="74.5" y="77.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="75.5" y="77.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="76.5" y="77.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="77.5" y="77.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="87.5" y="82.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="88.5" y="82.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="89.5" y="82.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="90.5" y="82.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="87" y="81.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="88" y="81.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="89" y="81.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="90" y="81.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="91" y="81.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="87" y="78.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="88" y="78.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="89" y="78.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="90" y="78.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="91" y="78.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="87.5" y="77.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="88.5" y="77.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="89.5" y="77.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="90.5" y="77.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="22.5" y="72.4" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="23.5" y="72.4" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="24.5" y="72.4" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="25.5" y="72.4" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="22" y="71.4" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="23" y="71.4" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="24" y="71.4" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="25" y="71.4" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="26" y="71.4" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="22" y="68.4" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="23" y="68.4" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="24" y="68.4" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="25" y="68.4" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="26" y="68.4" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="22.5" y="67.4" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="23.5" y="67.4" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="24.5" y="67.4" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="25.5" y="67.4" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="35.5" y="72.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="36.5" y="72.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="37.5" y="72.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="38.5" y="72.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="35" y="71.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="36" y="71.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="37" y="71.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="38" y="71.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="39" y="71.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="35" y="68.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="36" y="68.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="37" y="68.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="38" y="68.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="39" y="68.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="35.5" y="67.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="36.5" y="67.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="37.5" y="67.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="38.5" y="67.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="48.5" y="72.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="49.5" y="72.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="50.5" y="72.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="51.5" y="72.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="48" y="71.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="49" y="71.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="50" y="71.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="51" y="71.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="52" y="71.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="48" y="68.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="49" y="68.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="50" y="68.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="51" y="68.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="52" y="68.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="48.5" y="67.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="49.5" y="67.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="50.5" y="67.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="51.5" y="67.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="61.5" y="72.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="62.5" y="72.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="63.5" y="72.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="64.5" y="72.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="61" y="71.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="62" y="71.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="63" y="71.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="64" y="71.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="65" y="71.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="61" y="68.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="62" y="68.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="63" y="68.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="64" y="68.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="65" y="68.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="61.5" y="67.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="62.5" y="67.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="63.5" y="67.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="64.5" y="67.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="74.5" y="72.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="75.5" y="72.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="76.5" y="72.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="77.5" y="72.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="74" y="71.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="75" y="71.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="76" y="71.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="77" y="71.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="78" y="71.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="74" y="68.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="75" y="68.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="76" y="68.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="77" y="68.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="78" y="68.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="74.5" y="67.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="75.5" y="67.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="76.5" y="67.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="77.5" y="67.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="87.5" y="72.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="88.5" y="72.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="89.5" y="72.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="90.5" y="72.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="87" y="71.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="88" y="71.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="89" y="71.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="90" y="71.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="91" y="71.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="87" y="68.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="88" y="68.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="89" y="68.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="90" y="68.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="91" y="68.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="87.5" y="67.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="88.5" y="67.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="89.5" y="67.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="90.5" y="67.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="22.5" y="62.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="23.5" y="62.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="24.5" y="62.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="25.5" y="62.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="22" y="61.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="23" y="61.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="24" y="61.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="25" y="61.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="26" y="61.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="22" y="58.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="23" y="58.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="24" y="58.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="25" y="58.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="26" y="58.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="22.5" y="57.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="23.5" y="57.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="24.5" y="57.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="25.5" y="57.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="35.5" y="62.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="36.5" y="62.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="37.5" y="62.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="38.5" y="62.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="35" y="61.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="36" y="61.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="37" y="61.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="38" y="61.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="39" y="61.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="35" y="58.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="36" y="58.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="37" y="58.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="38" y="58.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="39" y="58.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="35.5" y="57.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="36.5" y="57.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="37.5" y="57.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="38.5" y="57.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="48.5" y="62.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="49.5" y="62.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="50.5" y="62.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="51.5" y="62.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="48" y="61.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="49" y="61.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="50" y="61.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="51" y="61.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="52" y="61.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="48" y="58.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="49" y="58.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="50" y="58.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="51" y="58.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="52" y="58.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="48.5" y="57.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="49.5" y="57.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="50.5" y="57.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="51.5" y="57.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="61.5" y="62.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="62.5" y="62.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="63.5" y="62.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="64.5" y="62.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="61" y="61.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="62" y="61.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="63" y="61.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="64" y="61.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="65" y="61.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="61" y="58.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="62" y="58.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="63" y="58.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="64" y="58.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="65" y="58.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="61.5" y="57.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="62.5" y="57.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="63.5" y="57.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="64.5" y="57.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="74.5" y="62.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="75.5" y="62.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="76.5" y="62.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="77.5" y="62.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="74" y="61.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="75" y="61.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="76" y="61.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="77" y="61.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="78" y="61.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="74" y="58.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="75" y="58.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="76" y="58.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="77" y="58.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="78" y="58.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="74.5" y="57.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="75.5" y="57.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="76.5" y="57.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="77.5" y="57.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="87.5" y="62.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="88.5" y="62.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="89.5" y="62.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="90.5" y="62.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="87" y="61.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="88" y="61.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="89" y="61.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="90" y="61.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="91" y="61.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="87" y="58.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="88" y="58.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="89" y="58.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="90" y="58.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="91" y="58.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="87.5" y="57.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="88.5" y="57.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="89.5" y="57.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="90.5" y="57.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="22.5" y="52.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="23.5" y="52.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="24.5" y="52.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="25.5" y="52.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="22" y="51.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="23" y="51.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="24" y="51.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="25" y="51.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="26" y="51.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="22" y="48.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="23" y="48.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="24" y="48.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="25" y="48.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="26" y="48.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="22.5" y="47.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="23.5" y="47.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="24.5" y="47.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="25.5" y="47.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="35.5" y="52.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="36.5" y="52.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="37.5" y="52.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="38.5" y="52.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="35" y="51.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="36" y="51.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="37" y="51.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="38" y="51.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="39" y="51.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="35" y="48.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="36" y="48.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="37" y="48.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="38" y="48.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="39" y="48.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="35.5" y="47.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="36.5" y="47.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="37.5" y="47.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="38.5" y="47.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="48.5" y="52.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="49.5" y="52.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="50.5" y="52.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="51.5" y="52.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="48" y="51.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="49" y="51.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="50" y="51.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="51" y="51.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="52" y="51.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="48" y="48.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="49" y="48.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="50" y="48.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="51" y="48.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="52" y="48.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="48.5" y="47.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="49.5" y="47.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="50.5" y="47.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="51.5" y="47.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="61.5" y="52.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="62.5" y="52.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="63.5" y="52.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="64.5" y="52.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="61" y="51.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="62" y="51.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="63" y="51.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="64" y="51.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="65" y="51.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="61" y="48.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="62" y="48.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="63" y="48.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="64" y="48.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="65" y="48.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="61.5" y="47.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="62.5" y="47.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="63.5" y="47.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="64.5" y="47.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="74.5" y="52.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="75.5" y="52.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="76.5" y="52.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="77.5" y="52.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="74" y="51.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="75" y="51.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="76" y="51.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="77" y="51.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="78" y="51.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="74" y="48.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="75" y="48.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="76" y="48.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="77" y="48.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="78" y="48.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="74.5" y="47.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="75.5" y="47.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="76.5" y="47.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="77.5" y="47.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="87.5" y="52.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="88.5" y="52.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="89.5" y="52.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="90.5" y="52.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="87" y="51.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="88" y="51.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="89" y="51.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="90" y="51.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="91" y="51.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="87" y="48.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="88" y="48.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="89" y="48.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="90" y="48.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="91" y="48.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="87.5" y="47.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="88.5" y="47.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="89.5" y="47.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="90.5" y="47.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="22.5" y="42.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="23.5" y="42.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="24.5" y="42.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="25.5" y="42.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="22" y="41.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="23" y="41.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="24" y="41.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="25" y="41.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="26" y="41.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="22" y="38.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="23" y="38.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="24" y="38.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="25" y="38.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="26" y="38.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="22.5" y="37.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="23.5" y="37.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="24.5" y="37.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="25.5" y="37.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="35.5" y="42.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="36.5" y="42.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="37.5" y="42.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="38.5" y="42.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="35" y="41.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="36" y="41.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="37" y="41.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="38" y="41.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="39" y="41.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="35" y="38.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="36" y="38.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="37" y="38.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="38" y="38.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="39" y="38.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="35.5" y="37.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="36.5" y="37.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="37.5" y="37.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="38.5" y="37.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="48.5" y="42.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="49.5" y="42.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="50.5" y="42.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="51.5" y="42.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="48" y="41.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="49" y="41.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="50" y="41.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="51" y="41.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="52" y="41.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="48" y="38.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="49" y="38.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="50" y="38.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="51" y="38.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="52" y="38.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="48.5" y="37.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="49.5" y="37.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="50.5" y="37.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="51.5" y="37.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="61.5" y="42.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="62.5" y="42.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="63.5" y="42.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="64.5" y="42.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="61" y="41.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="62" y="41.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="63" y="41.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="64" y="41.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="65" y="41.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="61" y="38.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="62" y="38.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="63" y="38.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="64" y="38.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="65" y="38.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="61.5" y="37.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="62.5" y="37.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="63.5" y="37.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="64.5" y="37.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="74.5" y="42.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="75.5" y="42.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="76.5" y="42.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="77.5" y="42.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="74" y="41.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="75" y="41.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="76" y="41.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="77" y="41.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="78" y="41.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="74" y="38.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="75" y="38.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="76" y="38.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="77" y="38.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="78" y="38.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="74.5" y="37.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="75.5" y="37.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="76.5" y="37.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="77.5" y="37.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="87.5" y="42.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="88.5" y="42.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="89.5" y="42.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="90.5" y="42.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="87" y="41.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="88" y="41.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="89" y="41.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="90" y="41.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="91" y="41.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="87" y="38.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="88" y="38.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="89" y="38.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="90" y="38.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="91" y="38.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="87.5" y="37.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="88.5" y="37.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="89.5" y="37.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="90.5" y="37.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="22.5" y="32.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="23.5" y="32.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="24.5" y="32.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="25.5" y="32.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="22" y="31.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="23" y="31.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="24" y="31.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="25" y="31.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="26" y="31.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="22" y="28.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="23" y="28.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="24" y="28.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="25" y="28.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="26" y="28.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="22.5" y="27.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="23.5" y="27.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="24.5" y="27.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="25.5" y="27.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="35.5" y="32.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="36.5" y="32.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="37.5" y="32.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="38.5" y="32.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="35" y="31.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="36" y="31.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="37" y="31.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="38" y="31.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="39" y="31.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="35" y="28.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="36" y="28.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="37" y="28.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="38" y="28.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="39" y="28.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="35.5" y="27.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="36.5" y="27.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="37.5" y="27.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="38.5" y="27.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="48.5" y="32.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="49.5" y="32.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="50.5" y="32.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="51.5" y="32.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="48" y="31.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="49" y="31.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="50" y="31.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="51" y="31.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="52" y="31.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="48" y="28.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="49" y="28.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="50" y="28.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="51" y="28.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="52" y="28.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="48.5" y="27.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="49.5" y="27.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="50.5" y="27.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="51.5" y="27.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="61.5" y="32.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="62.5" y="32.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="63.5" y="32.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="64.5" y="32.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="61" y="31.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="62" y="31.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="63" y="31.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="64" y="31.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="65" y="31.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="61" y="28.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="62" y="28.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="63" y="28.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="64" y="28.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="65" y="28.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="61.5" y="27.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="62.5" y="27.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="63.5" y="27.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="64.5" y="27.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="74.5" y="32.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="75.5" y="32.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="76.5" y="32.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="77.5" y="32.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="74" y="31.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="75" y="31.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="76" y="31.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="77" y="31.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="78" y="31.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="74" y="28.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="75" y="28.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="76" y="28.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="77" y="28.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="78" y="28.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="74.5" y="27.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="75.5" y="27.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="76.5" y="27.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="77.5" y="27.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="87.5" y="32.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="88.5" y="32.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="89.5" y="32.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="90.5" y="32.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="87" y="31.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="88" y="31.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="89" y="31.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="90" y="31.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="91" y="31.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="87" y="28.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="88" y="28.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="89" y="28.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="90" y="28.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="91" y="28.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="87.5" y="27.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="88.5" y="27.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="89.5" y="27.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="90.5" y="27.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="22.5" y="22.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="23.5" y="22.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="24.5" y="22.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="25.5" y="22.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="22" y="21.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="23" y="21.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="24" y="21.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="25" y="21.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="26" y="21.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="22" y="18.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="23" y="18.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="24" y="18.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="25" y="18.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="26" y="18.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="22.5" y="17.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="23.5" y="17.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="24.5" y="17.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="25.5" y="17.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="35.5" y="22.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="36.5" y="22.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="37.5" y="22.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="38.5" y="22.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="35" y="21.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="36" y="21.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="37" y="21.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="38" y="21.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="39" y="21.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="35" y="18.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="36" y="18.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="37" y="18.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="38" y="18.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="39" y="18.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="35.5" y="17.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="36.5" y="17.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="37.5" y="17.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="38.5" y="17.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="48.5" y="22.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="49.5" y="22.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="50.5" y="22.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="51.5" y="22.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="48" y="21.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="49" y="21.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="50" y="21.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="51" y="21.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="52" y="21.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="48" y="18.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="49" y="18.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="50" y="18.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="51" y="18.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="52" y="18.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="48.5" y="17.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="49.5" y="17.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="50.5" y="17.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="51.5" y="17.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="61.5" y="22.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="62.5" y="22.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="63.5" y="22.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="64.5" y="22.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="61" y="21.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="62" y="21.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="63" y="21.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="64" y="21.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="65" y="21.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="61" y="18.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="62" y="18.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="63" y="18.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="64" y="18.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="65" y="18.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="61.5" y="17.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="62.5" y="17.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="63.5" y="17.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="64.5" y="17.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="74.5" y="22.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="75.5" y="22.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="76.5" y="22.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="77.5" y="22.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="74" y="21.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="75" y="21.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="76" y="21.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="77" y="21.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="78" y="21.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="74" y="18.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="75" y="18.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="76" y="18.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="77" y="18.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="78" y="18.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="74.5" y="17.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="75.5" y="17.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="76.5" y="17.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="77.5" y="17.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="87.5" y="22.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="88.5" y="22.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="89.5" y="22.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="90.5" y="22.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="87" y="21.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="88" y="21.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="89" y="21.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="90" y="21.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="91" y="21.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="87" y="18.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="88" y="18.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="89" y="18.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="90" y="18.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="91" y="18.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="87.5" y="17.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="88.5" y="17.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="89.5" y="17.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="90.5" y="17.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="22.5" y="12.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="23.5" y="12.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="24.5" y="12.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="25.5" y="12.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="22" y="11.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="23" y="11.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="24" y="11.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="25" y="11.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="26" y="11.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="22" y="8.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="23" y="8.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="24" y="8.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="25" y="8.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="26" y="8.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="22.5" y="7.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="23.5" y="7.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="24.5" y="7.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="25.5" y="7.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="35.5" y="12.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="36.5" y="12.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="37.5" y="12.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="38.5" y="12.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="35" y="11.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="36" y="11.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="37" y="11.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="38" y="11.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="39" y="11.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="35" y="8.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="36" y="8.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="37" y="8.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="38" y="8.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="39" y="8.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="35.5" y="7.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="36.5" y="7.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="37.5" y="7.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="38.5" y="7.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="48.5" y="12.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="49.5" y="12.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="50.5" y="12.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="51.5" y="12.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="48" y="11.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="49" y="11.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="50" y="11.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="51" y="11.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="52" y="11.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="48" y="8.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="49" y="8.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="50" y="8.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="51" y="8.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="52" y="8.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="48.5" y="7.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="49.5" y="7.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="50.5" y="7.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="51.5" y="7.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="61.5" y="12.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="62.5" y="12.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="63.5" y="12.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="64.5" y="12.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="61" y="11.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="62" y="11.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="63" y="11.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="64" y="11.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="65" y="11.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="61" y="8.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="62" y="8.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="63" y="8.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="64" y="8.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="65" y="8.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="61.5" y="7.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="62.5" y="7.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="63.5" y="7.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="64.5" y="7.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="74.5" y="12.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="75.5" y="12.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="76.5" y="12.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="77.5" y="12.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="74" y="11.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="75" y="11.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="76" y="11.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="77" y="11.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="78" y="11.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="74" y="8.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="75" y="8.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="76" y="8.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="77" y="8.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="78" y="8.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="74.5" y="7.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="75.5" y="7.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="76.5" y="7.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="77.5" y="7.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="87.5" y="12.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="88.5" y="12.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="89.5" y="12.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="90.5" y="12.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="87" y="11.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="88" y="11.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="89" y="11.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="90" y="11.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="91" y="11.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="87" y="8.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="88" y="8.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="89" y="8.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="90" y="8.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="87.5" y="7.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="88.5" y="7.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="89.5" y="7.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="61.5" y="92.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="62.5" y="92.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="63.5" y="92.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="64.5" y="92.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="61" y="91.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="62" y="91.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="63" y="91.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="64" y="91.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="65" y="91.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="61" y="88.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="62" y="88.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="63" y="88.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="64" y="88.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="65" y="88.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="61.5" y="87.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="62.5" y="87.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="63.5" y="87.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="64.5" y="87.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="74.5" y="92.6" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="75.5" y="92.6" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="76.5" y="92.6" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="77.5" y="92.6" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="74" y="91.6" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="75" y="91.6" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="76" y="91.6" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="77" y="91.6" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="78" y="91.6" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="74" y="88.6" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="75" y="88.6" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="76" y="88.6" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="77" y="88.6" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="78" y="88.6" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="74.5" y="87.6" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="75.5" y="87.6" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="76.5" y="87.6" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="77.5" y="87.6" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="87.5" y="92.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="88.5" y="92.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="89.5" y="92.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="90.5" y="92.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="87" y="91.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="88" y="91.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="89" y="91.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="90" y="91.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="91" y="91.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="87" y="88.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="88" y="88.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="89" y="88.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="90" y="88.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="91" y="88.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="87.5" y="87.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="88.5" y="87.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="89.5" y="87.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="90.5" y="87.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="22.5" y="82.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="23.5" y="82.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="24.5" y="82.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="25.5" y="82.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="22" y="81.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="23" y="81.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="24" y="81.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="25" y="81.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<via x="26" y="81.5" extent="1-16" drill="0.3" diameter="0.34">
+</via>
+<polygon width="1.016" layer="1" spacing="1.27" pour="solid" thermals="yes" rank="2">
+<vertex x="0.508" y="0.508"/>
+<vertex x="99.492" y="0.508"/>
+<vertex x="99.492" y="99.492"/>
+<vertex x="0.508" y="99.492"/>
+</polygon>
+</signal>
+<signal name="N$8">
+<contactref element="LED6" pad="1"/>
+<wire x1="92.5" y1="39.2" x2="91.7" y2="40" width="1.016" layer="1"/>
+<wire x1="91.7" y1="40" x2="89.735" y2="40" width="1.016" layer="1"/>
+<wire x1="92.5" y1="37.3" x2="92.5" y2="39.2" width="1.016" layer="1"/>
+<wire x1="92.5" y1="37.3" x2="91.2" y2="36" width="1.016" layer="1"/>
+<wire x1="91.2" y1="36" x2="11.75" y2="36" width="1.016" layer="1"/>
+<contactref element="BLUE-" pad="1"/>
+<wire x1="11.25" y1="35.5" x2="11.75" y2="36" width="1.016" layer="1"/>
+</signal>
+<signal name="N$11">
+<contactref element="LED24" pad="1"/>
+<contactref element="LED30" pad="1"/>
+<contactref element="LED36" pad="1"/>
+<contactref element="LED42" pad="1"/>
+<contactref element="LED48" pad="1"/>
+<contactref element="LED54" pad="1"/>
+<wire x1="93.1" y1="88.8" x2="91.9" y2="90" width="1.016" layer="1"/>
+<wire x1="91.9" y1="90" x2="89.735" y2="90" width="1.016" layer="1"/>
+<wire x1="93.1" y1="88.8" x2="93.1" y2="81.8" width="1.016" layer="1"/>
+<wire x1="93.1" y1="81.8" x2="91.3" y2="80" width="1.016" layer="1"/>
+<wire x1="91.3" y1="80" x2="89.735" y2="80" width="1.016" layer="1"/>
+<wire x1="96.3" y1="33.7" x2="96.3" y2="48.9" width="1.016" layer="1"/>
+<wire x1="92.6" y1="30" x2="96.3" y2="33.7" width="1.016" layer="1"/>
+<wire x1="92.6" y1="30" x2="89.735" y2="30" width="1.016" layer="1"/>
+<wire x1="94" y1="28.7" x2="92.7" y2="30" width="1.016" layer="1"/>
+<wire x1="92.7" y1="30" x2="89.735" y2="30" width="1.016" layer="1"/>
+<wire x1="94" y1="28.7" x2="94" y2="21.4" width="1.016" layer="1"/>
+<wire x1="94" y1="21.4" x2="92.6" y2="20" width="1.016" layer="1"/>
+<wire x1="92.6" y1="20" x2="89.735" y2="20" width="1.016" layer="1"/>
+<contactref element="WHITE-" pad="1"/>
+<polygon width="1.016" layer="1" spacing="1.27" pour="solid" thermals="no">
+<vertex x="92.19608125" y="79.47338125"/>
+<vertex x="92.31191875" y="79.4065"/>
+<vertex x="93.767053125" y="77.951365625"/>
+<vertex x="93.5360875" y="80.492"/>
+<vertex x="89.508" y="80.492"/>
+<vertex x="89.508" y="79.508"/>
+<vertex x="92.066878125" y="79.508"/>
+</polygon>
+<polygon width="1.016" layer="1" spacing="1.27" pour="solid" thermals="no">
+<vertex x="92.51191875" y="76.3935"/>
+<vertex x="92.39608125" y="76.32661875"/>
+<vertex x="92.266878125" y="76.292"/>
+<vertex x="16.508" y="76.292"/>
+<vertex x="16.508" y="74.008"/>
+<vertex x="96.792" y="74.008"/>
+<vertex x="96.792" y="79.68958125"/>
+<vertex x="95.98958125" y="80.492"/>
+<vertex x="92.708" y="80.492"/>
+<vertex x="92.708" y="76.733121875"/>
+<vertex x="92.67338125" y="76.60391875"/>
+<vertex x="92.6065" y="76.48808125"/>
+</polygon>
+<polygon width="1.016" layer="1" spacing="1.27" pour="solid" thermals="no">
+<vertex x="90.62641875" y="75.508"/>
+<vertex x="93.292" y="75.508"/>
+<vertex x="93.292" y="78.17358125"/>
+</polygon>
+<polygon width="1.016" layer="1" spacing="1.27" pour="solid" thermals="no">
+<vertex x="13.41041875" y="74.008"/>
+<vertex x="18.492" y="74.008"/>
+<vertex x="18.492" y="75.78958125"/>
+<vertex x="17.48958125" y="76.792"/>
+<vertex x="12.508" y="76.792"/>
+<vertex x="12.508" y="74.91041875"/>
+</polygon>
+<wire x1="12.15" y1="75.1" x2="92.2" y2="75.1" width="1.016" layer="1"/>
+<wire x1="12.15" y1="75.1" x2="11.25" y2="76" width="1.016" layer="1"/>
+<wire x1="92.2" y1="75.1" x2="94.4" y2="77.3" width="1.016" layer="1"/>
+<wire x1="94.4" y1="77.3" x2="95.2" y2="78.1" width="1.016" layer="1"/>
+<wire x1="95.2" y1="78.1" x2="93.3" y2="80" width="1.016" layer="1"/>
+<wire x1="93.3" y1="80" x2="89.735" y2="80" width="1.016" layer="1"/>
+<polygon width="2.54" layer="1" spacing="1.27" pour="solid" thermals="no">
+<vertex x="95.87" y="50.67"/>
+<vertex x="96.0175" y="50.67"/>
+<vertex x="96.0175" y="78.23"/>
+<vertex x="95.87" y="78.23"/>
+</polygon>
+<polygon width="2.54" layer="1" spacing="1.27" pour="solid" thermals="no">
+<vertex x="93.944140625" y="74.1519125"/>
+<vertex x="95.73" y="72.366053125"/>
+<vertex x="95.73" y="73.773946875"/>
+<vertex x="95.073946875" y="74.43"/>
+<vertex x="93.87" y="74.43"/>
+<vertex x="93.87" y="74.287921875"/>
+<vertex x="93.8862" y="74.265625"/>
+</polygon>
+<wire x1="89.735" y1="50" x2="94.8" y2="50" width="1.016" layer="1"/>
+<wire x1="94.8" y1="50" x2="95.8" y2="50" width="1.016" layer="1"/>
+<wire x1="95.8" y1="50" x2="96.3" y2="50.5" width="1.016" layer="1"/>
+<wire x1="96.3" y1="50.5" x2="96.3" y2="59.8" width="1.016" layer="1"/>
+<wire x1="96.3" y1="59.8" x2="96.1" y2="60" width="1.016" layer="1"/>
+<wire x1="96.1" y1="60" x2="94.2" y2="60" width="1.016" layer="1"/>
+<wire x1="89.735" y1="60" x2="93.6" y2="60" width="1.016" layer="1"/>
+<wire x1="93.6" y1="60" x2="96.1" y2="62.5" width="1.016" layer="1"/>
+<wire x1="93.6" y1="60" x2="94.2" y2="60" width="1.016" layer="1"/>
+<wire x1="94.2" y1="60" x2="95.8" y2="58.4" width="1.016" layer="1"/>
+<wire x1="96.1" y1="62.5" x2="96.1" y2="75.6" width="1.016" layer="1"/>
+<wire x1="96.1" y1="75.6" x2="94.4" y2="77.3" width="1.016" layer="1"/>
+<wire x1="96.3" y1="48.9" x2="95.9" y2="48.9" width="1.016" layer="1"/>
+<wire x1="95.9" y1="48.9" x2="94.8" y2="50" width="1.016" layer="1"/>
+<wire x1="96.3" y1="48.9" x2="96.3" y2="50.5" width="1.016" layer="1"/>
+</signal>
+<signal name="N$23">
+<contactref element="LED18" pad="1"/>
+<wire x1="91.1834875" y1="9.2165125" x2="90.4" y2="10" width="1.016" layer="1"/>
+<wire x1="90.4" y1="10" x2="89.735" y2="10" width="1.016" layer="1"/>
+<wire x1="91.152025" y1="7.152025" x2="91.1834875" y2="9.2165125" width="1.016" layer="1"/>
+<wire x1="89" y1="5" x2="91.152025" y2="7.152025" width="1.016" layer="1"/>
+<wire x1="89" y1="5" x2="19" y2="5" width="1.016" layer="1"/>
+<wire x1="19" y1="5" x2="11.25" y2="12.75" width="1.016" layer="1"/>
+<contactref element="FR-" pad="1"/>
+<wire x1="11.25" y1="12.75" x2="11.25" y2="15.5" width="1.016" layer="1"/>
+</signal>
+<signal name="N$27">
+<contactref element="LED12" pad="1"/>
+<wire x1="92.5804" y1="69.3196" x2="91.9" y2="70" width="1.016" layer="1"/>
+<wire x1="91.9" y1="70" x2="89.735" y2="70" width="1.016" layer="1"/>
+<wire x1="92.5804" y1="67.37645625" x2="92.5804" y2="69.3196" width="1.016" layer="1"/>
+<wire x1="91.20394375" y1="66" x2="92.5804" y2="67.37645625" width="1.016" layer="1"/>
+<wire x1="22.28394375" y1="66" x2="91.20394375" y2="66" width="1.016" layer="1"/>
+<contactref element="RED-" pad="1"/>
+<wire x1="22.28394375" y1="66" x2="14.28394375" y2="58" width="1.016" layer="1"/>
+<wire x1="11.25" y1="58" x2="14.28394375" y2="58" width="1.016" layer="1"/>
+</signal>
+</signals>
+<mfgpreviewcolors>
+<mfgpreviewcolor name="soldermaskcolor" color="0xC8686868"/>
+<mfgpreviewcolor name="silkscreencolor" color="0xFFFFFFFF"/>
+<mfgpreviewcolor name="backgroundcolor" color="0xFFFFFFFF"/>
+<mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
+<mfgpreviewcolor name="substratecolor" color="0xFFA8A8A8"/>
+</mfgpreviewcolors>
+</board>
+</drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+<note version="8.2" severity="warning">
+Since Version 8.2, EAGLE supports online libraries. The ids
+of those online libraries will not be understood (or retained)
+with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports URNs for individual library
+assets (packages, symbols, and devices). The URNs of those assets
+will not be understood (or retained) with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports the association of 3D packages
+with devices in libraries, schematics, and board files. Those 3D
+packages will not be understood (or retained) with this version.
+</note>
+</compatibility>
+</eagle>
